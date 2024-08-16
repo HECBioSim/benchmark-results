@@ -1,0 +1,1845 @@
+{
+    "sysinfo": {
+        "kernel-release": "5.14.21-150400.24.46_12.0.63-cray_shasta_c",
+        "CPU": {
+            "Architecture": "x86_64",
+            "CPU op-mode(s)": "32-bit, 64-bit",
+            "Address sizes": "43 bits physical, 48 bits virtual",
+            "Byte Order": "Little Endian",
+            "CPU(s)": "256",
+            "On-line CPU(s) list": "0-255",
+            "Vendor ID": "AuthenticAMD",
+            "Model name": "AMD EPYC 7742 64-Core Processor",
+            "CPU family": "23",
+            "Model": "49",
+            "Thread(s) per core": "2",
+            "Core(s) per socket": "64",
+            "Socket(s)": "2",
+            "Stepping": "0",
+            "Frequency boost": "enabled",
+            "CPU max MHz": "2250.0000",
+            "CPU min MHz": "1500.0000",
+            "BogoMIPS": "4491.31",
+            "Flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es",
+            "Virtualization": "AMD-V",
+            "L1d cache": "4 MiB (128 instances)",
+            "L1i cache": "4 MiB (128 instances)",
+            "L2 cache": "64 MiB (128 instances)",
+            "L3 cache": "512 MiB (32 instances)",
+            "NUMA node(s)": "8",
+            "NUMA node0 CPU(s)": "0-15,128-143",
+            "NUMA node1 CPU(s)": "16-31,144-159",
+            "NUMA node2 CPU(s)": "32-47,160-175",
+            "NUMA node3 CPU(s)": "48-63,176-191",
+            "NUMA node4 CPU(s)": "64-79,192-207",
+            "NUMA node5 CPU(s)": "80-95,208-223",
+            "NUMA node6 CPU(s)": "96-111,224-239",
+            "NUMA node7 CPU(s)": "112-127,240-255",
+            "Vulnerability Itlb multihit": "Not affected",
+            "Vulnerability L1tf": "Not affected",
+            "Vulnerability Mds": "Not affected",
+            "Vulnerability Meltdown": "Not affected",
+            "Vulnerability Mmio stale data": "Not affected",
+            "Vulnerability Retbleed": "Mitigation; untrained return thunk; SMT enabled with STIBP protection",
+            "Vulnerability Spec store bypass": "Mitigation; Speculative Store Bypass disabled via prctl and seccomp",
+            "Vulnerability Spectre v1": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization",
+            "Vulnerability Spectre v2": "Mitigation; Retpolines, IBPB conditional, IBRS_FW, STIBP always-on, RSB filling, PBRSB-eIBRS Not affected",
+            "Vulnerability Srbds": "Not affected",
+            "Vulnerability Tsx async abort": "Not affected"
+        },
+        "env": [
+            "__LMOD_REF_COUNT_PE_LIBSCI_REQUIRED_PRODUCTS=PE_MPICH:1",
+            "__LMOD_REF_COUNT_INCLUDE_PATH_AARCH64=/opt/cray/pe/cce/15.0.0/cce/aarch64/include/craylibs:1",
+            "ASSEMBLER_AARCH64=/opt/cray/pe/cce/15.0.0/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/as",
+            "CRAY_LMOD_MPI=cray-mpich/8.0",
+            "I_MPI_PIN_DOMAIN=omp",
+            "LMOD_FAMILY_CRAYPE_NETWORK_VERSION=false",
+            "LD_LIBRARY_PATH=/opt/cray/pe/fftw/3.3.10.3/x86_rome/lib:/opt/cray/pe/perftools/22.12.0/lib64:/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/lib:/opt/cray/pe/mpich/8.1.23/gtl/lib:/opt/cray/pe/libsci/22.12.1.1/CRAY/9.0/x86_64/lib:/opt/cray/pe/dsmml/0.2.2/dsmml/lib:/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib:/opt/cray/pe/cce/15.0.0/cce/x86_64/lib:/opt/cray/pe/python/3.9.13.1/lib:/opt/cray/pe/gcc-libs:/opt/cray/pe/papi/6.0.0.17/lib64:/opt/cray/libfabric/1.12.1.2.2.0.0/lib64",
+            "__LMOD_REF_COUNT_PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/lib/pkgconfig:1;/opt/cray/pe/libsci/22.12.1.1/CRAY/9.0/x86_64/lib/pkgconfig:1",
+            "HOSTTYPE=x86_64",
+            "CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.2.2",
+            "CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.2.2/dsmml",
+            "SLURM_NODEID=0",
+            "SLURM_TASK_PID=92277",
+            "__LMOD_REF_COUNT_PATH=/work/y07/shared/apps/core/gromacs/2022.4/bin:1;/opt/cray/pe/fftw/3.3.10.3/x86_rome/bin:1;/opt/cray/pe/python/3.9.13.1/bin:1;/opt/cray/pe/perftools/22.12.0/bin:1;/opt/cray/pe/papi/6.0.0.17/bin:1;/opt/cray/pe/craype/2.7.19/bin:1;/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/bin:1;/opt/cray/pe/mpich/8.1.23/bin:1;/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin:1;/opt/cray/pe/cce/15.0.0/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../bin:1;/opt/cray/pe/cce/15.0.0/utils/x86_64/bin:1;/opt/cray/pe/cce/15.0.0/bin:1;/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin:1;/work/y07/shared/utils/core/bolt/0.8/bin:1;/work/y07/shared/utils/core/bin:1;/opt/cray/libfabric/1.12.1.2.2.0.0/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:1;/usr/lib/mit/bin:1;/opt/cray/pe/bin:1",
+            "_ModuleTable002_=LWNyYXkvOC4zLjMiLFsibG9hZE9yZGVyIl09OCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYtY3JheS84LjMuMyIsfSxib2x0PXtbImZuIl09Ii93b3JrL3kwNy9zaGFyZWQvYXJjaGVyMi1sbW9kL3V0aWxzL2NvcmUvYm9sdC8wLjgubHVhIixbImZ1bGxOYW1lIl09ImJvbHQvMC44IixbImxvYWRPcmRlciJdPTUscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iYm9sdCIsfSxjY2U9e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jY2UvMTUuMC4wLmx1YSIsWyJmdWxsTmFtZSJdPSJjY2UvMTUuMC4wIixbImxvYWRP",
+            "PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.23/gtl/lib",
+            "PE_LIBSCI_OMP_REQUIRES=",
+            "LESSCLOSE=lessclose.sh %s %s",
+            "CRAY_LD_LIBRARY_PATH=/opt/cray/pe/fftw/3.3.10.3/x86_rome/lib:/opt/cray/pe/perftools/22.12.0/lib64:/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/lib:/opt/cray/pe/mpich/8.1.23/gtl/lib:/opt/cray/pe/libsci/22.12.1.1/CRAY/9.0/x86_64/lib:/opt/cray/pe/dsmml/0.2.2/dsmml/lib:/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib:/opt/cray/pe/cce/15.0.0/cce/x86_64/lib",
+            "XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB",
+            "SLURM_PRIO_PROCESS=0",
+            "PE_ENV=CRAY",
+            "LINKER_AARCH64=/opt/cray/pe/cce/15.0.0/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/ld",
+            "__LMOD_REF_COUNT_PE_DSMML_PKGCONFIG_LIBS=dsmml:1",
+            "__LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS=mpichf90:1",
+            "LMOD_FAMILY_CRAYPE_CPU=craype-x86-rome",
+            "FFTW_VERSION=3.3.10.3",
+            "CRAYPAT_LD_LIBRARY_PATH=/opt/cray/pe/gcc-libs:/opt/cray/gcc-libs:/opt/cray/pe/perftools/22.12.0/lib64",
+            "CRAY_LMOD_COMPILER=crayclang/14.0",
+            "LMOD_CUSTOM_COMPILER_AOCC_PREFIX=/work/y07/shared/archer2-lmod/utils/compiler/aocc/3.0",
+            "FTN_X86_64=/opt/cray/pe/cce/15.0.0/cce/x86_64",
+            "LMOD_MODULERCFILE=/opt/cray/pe/cpe/22.12/modulerc.lua",
+            "CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.2.2/dsmml",
+            "PE_PRODUCT_LIST=CRAYPE:CRAY_LIBSCI:CRAYPE_X86_ROME:PERFTOOLS:CRAYPAT",
+            "LMOD_FAMILY_MPI_VERSION=8.1.23",
+            "CRAYPAT_ROOT=/opt/cray/pe/perftools/22.12.0",
+            "PE_FFTW_PKGCONFIG_LIBS=fftw3f_mpi:libfftw3f_threads:fftw3f:fftw3_mpi:libfftw3_threads:fftw3",
+            "_=/work/c01/c01/rwelch/anaconda3/bin/python",
+            "PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/lib",
+            "PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.23/gtl/lib",
+            "PE_LIBSCI_MODULE_NAME=cray-libsci/22.12.1.1",
+            "LANG=en_US.UTF-8",
+            "PE_LIBSCI_GENCOMPILERS_CRAY_x86_64=9.0",
+            "CRAY_BINUTILS_ROOT_X86_64=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/../",
+            "SLURM_SUBMIT_DIR=/mnt/lustre/a2fs-work3/work/c01/c01/rwelch/runs/gromacs/16threads-8tasks/20k-atoms/13",
+            "PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.23/gtl/lib",
+            "PE_DSMML_MODULE_NAME=cray-dsmml",
+            "WINDOWMANAGER=xterm",
+            "_ModuleTable008_=IixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxbImVwY2Mtc2V0dXAtZW52Il09e1siZm4iXT0iL3dvcmsveTA3L3NoYXJlZC9hcmNoZXIyLWxtb2QvdXRpbHMvY29yZS9lcGNjLXNldHVwLWVudi5sdWEiLFsiZnVsbE5hbWUiXT0iZXBjYy1zZXR1cC1lbnYiLFsibG9hZE9yZGVyIl09Nixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJlcGNjLXNldHVwLWVudiIsfSxncm9tYWNzPXtbImZuIl09Ii93b3JrL3kwNy9zaGFyZWQvYXJjaGVyMi1s",
+            "LESS=-M -I -R",
+            "PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda",
+            "JAVA_ROOT=/usr/lib64/jvm/java",
+            "LMOD_FAMILY_COMPILER_VERSION=15.0.0",
+            "HOSTNAME=nid001448",
+            "LMOD_SYSTEM_DEFAULT_MODULES=craype-x86-rome:craype-network-ofi:perftools-base:xpmem:PrgEnv-cray:load-epcc-module",
+            "__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:1;/opt/cray/modulefiles/libfabric/1.12.1.2.2.0.0:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:1;/opt/cray/modulefiles/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:1;/work/y07/shared/archer2-lmod/utils/core/bolt/0.8.lua:1;/work/y07/shared/archer2-lmod/utils/core/epcc-setup-env.lua:1;/usr/local/share/modulefiles/load-epcc-module.lua:1;/opt/cray/pe/lmod/modulefiles/core/PrgEnv-cray/8.3.3.lua:1;/opt/cray/pe/lmod/modulefiles/core/cce/15.0.0.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-libsci/22.12.1.1.lua:1;/opt/cray/pe/lmod/modulefiles/comnet/crayclang/14.0/ofi/1.0/cray-mpich/8.1.23.lua:1;/opt/cray/pe/lmod/modulefiles/core/craype/2.7.19.lua:1;/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.12.0.lua:1;/opt/cray/pe/lmod/modulefiles/core/cpe/22.12.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-python/3.9.13.1.lua:1;/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0/cray-fftw/3.3.10.3.lua:1;/work/y07/shared/archer2-lmod/apps/core/gromacs/2022.4.lua:1",
+            "CSHEDIT=emacs",
+            "SLURM_CPUS_PER_TASK=16",
+            "LMOD_CUSTOM_COMPILER_GNU_8_0_PREFIX=/work/y07/shared/archer2-lmod/utils/compiler/gnu/8.0",
+            "ENVIRONMENT=BATCH",
+            "GPG_TTY=not a tty",
+            "LESS_ADVANCED_PREPROCESSOR=no",
+            "COLORTERM=1",
+            "GCC_X86_64=/opt/cray/pe/gcc/10.3.0/snos",
+            "ASSEMBLER_X86_64=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/as",
+            "_ModuleTable007_=XT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS8yLjcuMTkiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS1uZXR3b3JrLW9maS5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsiY3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUteDg2LXJvbWUubHVh",
+            "CRAY_PERFTOOLS_VERSION=22.12.0",
+            "__LMOD_REF_COUNT_NLSPATH=/opt/cray/pe/cce/15.0.0/cce/x86_64/share/nls/En/%N.cat:1",
+            "LMOD_FAMILY_CRAYPE_NETWORK=craype-network-ofi",
+            "JAVA_HOME=/usr/lib64/jvm/java",
+            "COMPILERRT_PATH_X86_64=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib/clang/15.0.2/lib/linux",
+            "LMOD_FAMILY_CRAYPE_VERSION=2.7.19",
+            "PE_XPMEM_PKGCONFIG_LIBS=cray-xpmem",
+            "APP2_STATE=22.12.0",
+            "SLURM_PROCID=0",
+            "LINKER_X86_64=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin/ld",
+            "SLURM_JOB_GID=1042",
+            "MACHTYPE=x86_64-suse-linux",
+            "PE_LIBSCI_FIXED_PRGENV=CRAYCLANG",
+            "__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/cray/pe/fftw/3.3.10.3/x86_rome/lib:1;/opt/cray/pe/perftools/22.12.0/lib64:1;/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/lib:1;/opt/cray/pe/mpich/8.1.23/gtl/lib:1;/opt/cray/pe/libsci/22.12.1.1/CRAY/9.0/x86_64/lib:1;/opt/cray/pe/dsmml/0.2.2/dsmml/lib:1;/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib:1;/opt/cray/pe/cce/15.0.0/cce/x86_64/lib:1;/opt/cray/pe/python/3.9.13.1/lib:1;/opt/cray/pe/gcc-libs:1;/opt/cray/pe/papi/6.0.0.17/lib64:1;/opt/cray/libfabric/1.12.1.2.2.0.0/lib64:1",
+            "__LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/cray/pe/fftw/3.3.10.3/x86_rome/lib/pkgconfig:1;/opt/cray/pe/craype/2.7.19/pkg-config:1;/opt/cray/pe/dsmml/0.2.2/dsmml/lib/pkgconfig:1;/opt/cray/libfabric/1.12.1.2.2.0.0/lib64/pkgconfig:1",
+            "SLURMD_NODENAME=nid001448",
+            "FFTW_INC=/opt/cray/pe/fftw/3.3.10.3/x86_rome/include",
+            "PE_PKGCONFIG_PRODUCTS=PE_FFTW:PE_MPICH:PE_LIBSCI:PE_DSMML:PE_XPMEM",
+            "LMOD_FAMILY_GROMACS_VERSION=2022.4",
+            "FFTW_DIR=/opt/cray/pe/fftw/3.3.10.3/x86_rome/lib",
+            "CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.23/ofi",
+            "PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.23/gtl/lib",
+            "_ModuleTable004_=ciJdPTEwLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktZHNtbWwvMC4yLjIiLH0sWyJjcmF5LWZmdHciXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcHUveDg2LXJvbWUvMS4wL2NyYXktZmZ0dy8zLjMuMTAuMy5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1mZnR3LzMuMy4xMC4zIixbImxvYWRPcmRlciJdPTE3LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktZmZ0dy8zLjMuMTAuMyIsfSxbImNyYXktbGlic2NpIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LWxpYnNj",
+            "PE_LIBSCI_GENCOMPILERS_GNU_x86_64=9.1",
+            "MINICOM=-c on",
+            "SLURM_TASKS_PER_NODE=8(x13)",
+            "PAT_BUILD_PAPI_LIBDIR=/opt/cray/pe/papi/6.0.0.17/lib64",
+            "__LMOD_REF_COUNT_PYTHONPATH=/opt/cray/pe/python/3.9.13.1:1;/work/y07/shared/utils/core/bolt/0.8/modules:1",
+            "PE_FFTW_OMP_REQUIRES= ",
+            "PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@",
+            "PE_MPICH_PKGCONFIG_LIBS=mpich",
+            "OSTYPE=linux",
+            "PE_LEVEL=15.0",
+            "XDG_SESSION_ID=c10",
+            "__LMOD_REF_COUNT_INCLUDE_PATH_X86_64=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib/clang/15.0.2/include:1;/opt/cray/pe/cce/15.0.0/cce/x86_64/include/craylibs:1",
+            "CRAY_DSMML_VER=0.2.2",
+            "__LMOD_REF_COUNT_PYTHON_PATH=/opt/cray/pe/python/3.9.13.1:1",
+            "USER=rwelch",
+            "SLURM_NNODES=13",
+            "PAGER=less",
+            "LMOD_CUSTOM_COMPILER_GNU_PREFIX=/work/y07/shared/archer2-lmod/utils/compiler/gnu/8.0",
+            "CRAY_CXX_IPA_LIBS_AARCH64=/opt/cray/pe/cce/15.0.0/cce/aarch64/lib/libcray-c++-rts.a",
+            "CRAY_PYTHON_LEVEL=3.9.13.1",
+            "SRUN_CPUS_PER_TASK=16",
+            "LMOD_FAMILY_PRGENV_VERSION=8.3.3",
+            "_ModuleTable012_=bW9kL21vZHVsZWZpbGVzL2NvbW5ldC9jcmF5Y2xhbmcvMTQuMC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tcGlsZXIvY3JheWNsYW5nLzE0LjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9taXhfY29tcGlsZXJzIiwiL3dvcmsveTA3L3NoYXJlZC9hcmNoZXIyLWxtb2QvdXRpbHMvY29tcGlsZXIvY3JheWNsYW5nLzEwLjAiLCIvd29yay95MDcvc2hhcmVkL2FyY2hlcjItbG1vZC90cmFpbmluZy9jb3JlIiwiL3dvcmsveTA3L3NoYXJlZC9hcmNoZXIyLWxtb2QvcHl0aG9uL3B5ZW52cyIsIi93b3JrL3kwNy9zaGFyZWQvYXJjaGVyMi1sbW9kL3B5dGhvbi9jb3JlIiwiL3dvcmsveTA3L3NoYXJlZC9hcmNoZXIyLWxtb2QvbGlicy9j",
+            "SLURM_GET_USER_ENV=1",
+            "CRAY_CPU_TARGET=x86-rome",
+            "PE_LIBSCI_VOLATILE_PRGENV=AMD AOCC CRAY GNU",
+            "SLURM_NTASKS_PER_NODE=8",
+            "PKGCONFIG_ENABLED=1",
+            "__LMOD_REF_COUNT_MODULEPATH=/opt/cray/pe/lmod/modulefiles/perftools/22.12.0:1;/opt/cray/pe/lmod/modulefiles/mpi/crayclang/14.0/ofi/1.0/cray-mpich/8.0:1;/opt/cray/pe/lmod/modulefiles/comnet/crayclang/14.0/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/compiler/crayclang/14.0:1;/opt/cray/pe/lmod/modulefiles/mix_compilers:1;/work/y07/shared/archer2-lmod/utils/compiler/crayclang/10.0:1;/work/y07/shared/archer2-lmod/training/core:1;/work/y07/shared/archer2-lmod/python/pyenvs:1;/work/y07/shared/archer2-lmod/python/core:1;/work/y07/shared/archer2-lmod/libs/core:1;/work/y07/shared/archer2-lmod/apps/core:1;/work/y07/shared/archer2-lmod/utils/core:1;/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/opt/cray/pe/lmod/modulefiles/core:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1;/usr/local/share/modulefiles:1;/opt/cray/modulefiles:1",
+            "MKL_THREADING_LAYER=INTEL",
+            "MORE=-sl",
+            "EPCC_SINGULARITY_DIR=/work/y07/shared/singularity-images",
+            "CRAY_PERFTOOLS_PREFIX=/opt/cray/pe/perftools/22.12.0",
+            "PE_FORTRAN_PKGCONFIG_LIBS=mpichf90",
+            "__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1;libfabric/1.12.1.2.2.0.0:1;craype-network-ofi:1;xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:1;bolt/0.8:1;epcc-setup-env:1;load-epcc-module:1;PrgEnv-cray/8.3.3:1;cce/15.0.0:1;cray-dsmml/0.2.2:1;cray-libsci/22.12.1.1:1;cray-mpich/8.1.23:1;craype/2.7.19:1;perftools-base/22.12.0:1;cpe/22.12:1;cray-python/3.9.13.1:1;cray-fftw/3.3.10.3:1;gromacs/2022.4:1",
+            "__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH=/opt/cray/pe/fftw/3.3.10.3/x86_rome/lib:1;/opt/cray/pe/perftools/22.12.0/lib64:1;/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/lib:1;/opt/cray/pe/mpich/8.1.23/gtl/lib:1;/opt/cray/pe/libsci/22.12.1.1/CRAY/9.0/x86_64/lib:2;/opt/cray/pe/dsmml/0.2.2/dsmml/lib:1;/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib:1;/opt/cray/pe/cce/15.0.0/cce/x86_64/lib:1",
+            "CRAY_CXX_IPA_LIBS=/opt/cray/pe/cce/15.0.0/cce/x86_64/lib/libcray-c++-rts.a",
+            "CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/22.12.1.1",
+            "PWD=/mnt/lustre/a2fs-work3/work/c01/c01/rwelch/runs/gromacs/16threads-8tasks/20k-atoms/13",
+            "PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.23/gtl/lib",
+            "SLURM_JOB_NODELIST=nid[001448-001449,001452-001458,001460,004088-004090]",
+            "HOME=/home/c01/c01/rwelch",
+            "SLURM_CLUSTER_NAME=archer2",
+            "CRAYLIBS_AARCH64=/opt/cray/pe/cce/15.0.0/cce/aarch64/lib",
+            "PELOCAL_PRGENV=true",
+            "PE_LIBSCI_REQUIRED_PRODUCTS=PE_MPICH",
+            "LMOD_CUSTOM_COMPILER_CRAYCLANG_PREFIX=/work/y07/shared/archer2-lmod/utils/compiler/crayclang/10.0",
+            "SLURM_NODELIST=nid[001448-001449,001452-001458,001460,004088-004090]",
+            "PE_LIBSCI_GENCOMPS_AMD_x86_64=40",
+            "HOST=nid001448",
+            "LMOD_FAMILY_GROMACS=gromacs",
+            "LMOD_VERSION=8.3.1",
+            "__LMOD_REF_COUNT_LMOD_MODULERCFILE=/opt/cray/pe/cpe/22.12/modulerc.lua:1",
+            "XNLSPATH=/usr/X11R6/lib/X11/nls",
+            "PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90",
+            "SLURM_NTASKS=104",
+            "PE_LIBSCI_PKGCONFIG_LIBS=libsci_mpi:libsci",
+            "XDG_SESSION_TYPE=unspecified",
+            "SDK_HOME=/usr/lib64/jvm/java",
+            "CRAY_LMOD_CPU=x86-rome/1.0",
+            "PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda",
+            "PE_LIBSCI_OMP_REQUIRES_openmp=_mp",
+            "LMOD_FAMILY_CRAYPE_CPU_VERSION=false",
+            "SLURM_JOB_CPUS_PER_NODE=256(x13)",
+            "BASH_ENV=/usr/share/lmod/lmod/init/bash",
+            "CRAYLIBS_X86_64=/opt/cray/pe/cce/15.0.0/cce/x86_64/lib",
+            "XDG_DATA_DIRS=/usr/share",
+            "__LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90:1",
+            "SLURM_TOPOLOGY_ADDR=gall.g05.nid001448",
+            "CRAY_BINUTILS_ROOT=/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/../",
+            "PYTHON_PATH=/opt/cray/pe/python/3.9.13.1",
+            "CRAY_LMOD_NET=ofi/1.0",
+            "PE_FFTW_OMP_REQUIRES_openmp=_mp",
+            "__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS=PE_FFTW:1;PE_MPICH:1;PE_LIBSCI:1;PE_DSMML:1;PE_XPMEM:1",
+            "PE_MPICH_MODULE_NAME=cray-mpich",
+            "__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_CRAYCLANG=10.0:1",
+            "NLSPATH=/opt/cray/pe/cce/15.0.0/cce/x86_64/share/nls/En/%N.cat",
+            "CRAY_LIBSCI_DIR=/opt/cray/pe/libsci/22.12.1.1",
+            "SLURM_WORKING_CLUSTER=archer2:10.253.124.2:6817:9728:109",
+            "PE_LIBSCI_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/22.12.1.1/@PRGENV@/@PE_LIBSCI_GENCOMPS@/@PE_LIBSCI_TARGET@/lib/pkgconfig",
+            "JDK_HOME=/usr/lib64/jvm/java",
+            "__LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV=CRAYCLANG:1",
+            "LIBSCI_VERSION=22.12.1.1",
+            "SLURM_JOB_NAME=benchmark",
+            "PROFILEREAD=true",
+            "TMPDIR=/tmp",
+            "PERFTOOLS_VERSION=22.12.0",
+            "CRAY_BINUTILS_VERSION=/opt/cray/pe/cce/15.0.0",
+            "CRAY_CCE_CLANGSHARE=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/share",
+            "LMOD_sys=Linux",
+            "_ModuleTable010_=b2NhbC9zaGFyZS9tb2R1bGVmaWxlcy9sb2FkLWVwY2MtbW9kdWxlLmx1YSIsWyJmdWxsTmFtZSJdPSJsb2FkLWVwY2MtbW9kdWxlIixbImxvYWRPcmRlciJdPTcscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0ibG9hZC1lcGNjLW1vZHVsZSIsfSxbInBlcmZ0b29scy1iYXNlIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9wZXJmdG9vbHMtYmFzZS8yMi4xMi4wLmx1YSIsWyJmdWxsTmFtZSJdPSJwZXJmdG9vbHMtYmFzZS8yMi4xMi4wIixbImxvYWRPcmRlciJdPTE0LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBlcmZ0",
+            "PE_PKGCONFIG_LIBS=mpich:libsci_mpi:libsci:dsmml",
+            "SLURM_JOBID=5785211",
+            "SLURM_CPU_FREQ_REQ=2250000",
+            "_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtY3JheSIsWyJjb21waWxlciJdPSJjY2UiLFsiY3JheXBlIl09ImNyYXlwZSIsWyJjcmF5cGVfY3B1Il09ImNyYXlwZS14ODYtcm9tZSIsWyJjcmF5cGVfbmV0d29yayJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsiZ3JvbWFjcyJdPSJncm9tYWNzIixbIm1waSJdPSJjcmF5LW1waWNoIix9LG1UPXtbIlByZ0Vudi1jcmF5Il09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9QcmdFbnYtY3JheS84LjMuMy5sdWEiLFsiZnVsbE5hbWUiXT0iUHJnRW52",
+            "SLURM_CONF=/var/spool/slurmd/conf-cache/slurm.conf",
+            "LOADEDMODULES=craype-x86-rome:libfabric/1.12.1.2.2.0.0:craype-network-ofi:xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:bolt/0.8:epcc-setup-env:load-epcc-module:PrgEnv-cray/8.3.3:cce/15.0.0:cray-dsmml/0.2.2:cray-libsci/22.12.1.1:cray-mpich/8.1.23:craype/2.7.19:perftools-base/22.12.0:cpe/22.12:cray-python/3.9.13.1:cray-fftw/3.3.10.3:gromacs/2022.4",
+            "BOLT_DIR=/work/y07/shared/utils/core/bolt/0.8",
+            "CRAYPE_NETWORK_TARGET=ofi",
+            "INCLUDE_PATH_AARCH64=/opt/cray/pe/cce/15.0.0/cce/aarch64/include/craylibs",
+            "CRAY_PE_USE_CLANG=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin/clang",
+            "_ModuleTable006_=OC4xLjIzIix9LFsiY3JheS1weXRob24iXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcHl0aG9uLzMuOS4xMy4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LXB5dGhvbi8zLjkuMTMuMSIsWyJsb2FkT3JkZXIiXT0xNixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LXB5dGhvbi8zLjkuMTMuMSIsfSxjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5cGUvMi43LjE5Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjE5IixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMi",
+            "__LMOD_REF_COUNT_MANPATH=/opt/cray/pe/fftw/3.3.10.3/share/man:1;/opt/cray/pe/python/3.9.13.1/share/man:1;/opt/cray/pe/perftools/22.12.0/man:1;/opt/cray/pe/papi/6.0.0.17/share/pdoc/man:1;/opt/cray/pe/craype/2.7.19/man:1;/opt/cray/pe/mpich/8.1.23/ofi/man:1;/opt/cray/pe/mpich/8.1.23/man/mpich:1;/opt/cray/pe/libsci/22.12.1.1/man:1;/opt/cray/pe/man/csmlversion:1;/opt/cray/pe/dsmml/0.2.2/dsmml/man:1;/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/share/man:1;/opt/cray/pe/cce/15.0.0/man:1;/opt/cray/libfabric/1.12.1.2.2.0.0/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/local/man:1;/usr/share/man:1;/usr/man:1",
+            "_ModuleTable003_=cmRlciJdPTkscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY2NlLzE1LjAuMCIsfSxjcGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcGUvMjIuMTIubHVhIixbImZ1bGxOYW1lIl09ImNwZS8yMi4xMiIsWyJsb2FkT3JkZXIiXT0xNSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcGUvMjIuMTIiLH0sWyJjcmF5LWRzbW1sIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LWRzbW1sLzAuMi4yLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWRzbW1sLzAuMi4yIixbImxvYWRPcmRl",
+            "GCC_AARCH64=/opt/gcc-cross-aarch64/10.3.0/aarch64",
+            "SLURM_NODE_ALIASES=(null)",
+            "LMOD_ROOT=/usr/share/lmod",
+            "SLURM_JOB_QOS=standard",
+            "SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.node",
+            "PAT_RT_PERFCTR_DISABLE_COMPONENTS=nvml,cuda",
+            "PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/lib/pkgconfig:/opt/cray/pe/libsci/22.12.1.1/CRAY/9.0/x86_64/lib/pkgconfig",
+            "CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpich/8.1.23",
+            "_ModuleTable013_=b3JlIiwiL3dvcmsveTA3L3NoYXJlZC9hcmNoZXIyLWxtb2QvYXBwcy9jb3JlIiwiL3dvcmsveTA3L3NoYXJlZC9hcmNoZXIyLWxtb2QvdXRpbHMvY29yZSIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL25ldC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3B1L3g4Ni1yb21lLzEuMCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCIvdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQiLCIvdXNyL2xv",
+            "MAIL=/var/spool/mail/rwelch",
+            "CRAY_CCE_SHARE=/opt/cray/pe/cce/15.0.0/cce/x86_64/share",
+            "CRAY_BINUTILS_BIN_AARCH64=/opt/cray/pe/cce/15.0.0/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin",
+            "SLURM_CPUS_ON_NODE=256",
+            "SLURM_JOB_NUM_NODES=13",
+            "LESSKEY=/etc/lesskey.bin",
+            "_ModuleTable009_=bW9kL2FwcHMvY29yZS9ncm9tYWNzLzIwMjIuNC5sdWEiLFsiZnVsbE5hbWUiXT0iZ3JvbWFjcy8yMDIyLjQiLFsibG9hZE9yZGVyIl09MTgscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iZ3JvbWFjcyIsfSxsaWJmYWJyaWM9e1siZm4iXT0iL29wdC9jcmF5L21vZHVsZWZpbGVzL2xpYmZhYnJpYy8xLjEyLjEuMi4yLjAuMCIsWyJmdWxsTmFtZSJdPSJsaWJmYWJyaWMvMS4xMi4xLjIuMi4wLjAiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJsaWJmYWJyaWMiLH0sWyJsb2FkLWVwY2MtbW9kdWxlIl09e1siZm4iXT0iL3Vzci9s",
+            "SHELL=/bin/bash",
+            "CRAY_MPICH_VER=8.1.23",
+            "PE_MPICH_GENCOMPILERS_CRAYCLANG=10.0",
+            "CRAY_BINUTILS_ROOT_AARCH64=/opt/cray/pe/cce/15.0.0/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../",
+            "XDG_SESSION_CLASS=background",
+            "PE_MPICH_FIXED_PRGENV=CRAYCLANG",
+            "LMOD_CUSTOM_COMPILER_CRAYCLANG_10_0_PREFIX=/work/y07/shared/archer2-lmod/utils/compiler/crayclang/10.0",
+            "PE_LIBSCI_GENCOMPILERS_AMD_x86_64=4.0",
+            "LMOD_FAMILY_PRGENV=PrgEnv-cray",
+            "_ModuleTable_Sz_=14",
+            "SLURM_JOB_UID=46724",
+            "CRAY_LIBSCI_VERSION=22.12.1.1",
+            "CRAY_PYTHON_PREFIX=/opt/cray/pe/python/3.9.13.1",
+            "SLURM_JOB_PARTITION=standard",
+            "CRAY_CXX_IPA_LIBS_X86_64=/opt/cray/pe/cce/15.0.0/cce/x86_64/lib/libcray-c++-rts.a",
+            "CRAY_BINUTILS_BIN_X86_64=/opt/cray/pe/cce/15.0.0/binutils/x86_64/bin",
+            "LMOD_FAMILY_COMPILER=cce",
+            "CC_X86_64=/opt/cray/pe/cce/15.0.0/cce/x86_64",
+            "CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.2.2",
+            "FFTW_ROOT=/opt/cray/pe/fftw/3.3.10.3/x86_rome",
+            "FORTRAN_SYSTEM_MODULE_NAMES=ftn_lib_definitions",
+            "CRAY_XPMEM_POST_LINK_OPTS=-L/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/lib64",
+            "CRAY_FFTW_VERSION=3.3.10.3",
+            "SLURM_JOB_USER=rwelch",
+            "CRAY_PE_CCE_VARIANT=CC=Clang:FTN=Classic",
+            "SLURM_NPROCS=104",
+            "PE_LIBSCI_GENCOMPS_AOCC_x86_64=20",
+            "CRAY_CC_VERSION=15.0.0",
+            "SHLVL=3",
+            "SLURM_SUBMIT_HOST=ln03",
+            "PYTHONPATH=/opt/cray/pe/python/3.9.13.1:/work/y07/shared/utils/core/bolt/0.8/modules",
+            "CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/22.12.1.1/CRAY/9.0/x86_64",
+            "G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252",
+            "SLURM_JOB_ACCOUNT=c01-bio",
+            "PE_FFTW_PKGCONFIG_VARIABLES=PE_FFTW_OMP_REQUIRES_@openmp@",
+            "LMOD_CUSTOM_COMPILER_AOCC_3_0_PREFIX=/work/y07/shared/archer2-lmod/utils/compiler/aocc/3.0",
+            "CRAY_BINUTILS_BIN=/opt/cray/pe/cce/15.0.0/binutils/x86_64/bin",
+            "MANPATH=/opt/cray/pe/fftw/3.3.10.3/share/man:/opt/cray/pe/python/3.9.13.1/share/man:/opt/cray/pe/perftools/22.12.0/man:/opt/cray/pe/papi/6.0.0.17/share/pdoc/man:/opt/cray/pe/craype/2.7.19/man:/opt/cray/pe/mpich/8.1.23/ofi/man:/opt/cray/pe/mpich/8.1.23/man/mpich:/opt/cray/pe/libsci/22.12.1.1/man:/opt/cray/pe/man/csmlversion:/opt/cray/pe/dsmml/0.2.2/dsmml/man:/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/share/man:/opt/cray/pe/cce/15.0.0/man:/opt/cray/libfabric/1.12.1.2.2.0.0/share/man:/usr/share/lmod/lmod/share/man:/usr/local/man:/usr/share/man:/usr/man",
+            "CRAY_FTN_VERSION=15.0.0",
+            "SLURM_EXPORT_ENV=all",
+            "CRAY_DSMML_VERSION=0.2.2",
+            "MPICH_DIR=/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0",
+            "MODULEPATH=/opt/cray/pe/lmod/modulefiles/perftools/22.12.0:/opt/cray/pe/lmod/modulefiles/mpi/crayclang/14.0/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comnet/crayclang/14.0/ofi/1.0:/opt/cray/pe/lmod/modulefiles/compiler/crayclang/14.0:/opt/cray/pe/lmod/modulefiles/mix_compilers:/work/y07/shared/archer2-lmod/utils/compiler/crayclang/10.0:/work/y07/shared/archer2-lmod/training/core:/work/y07/shared/archer2-lmod/python/pyenvs:/work/y07/shared/archer2-lmod/python/core:/work/y07/shared/archer2-lmod/libs/core:/work/y07/shared/archer2-lmod/apps/core:/work/y07/shared/archer2-lmod/utils/core:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/usr/local/share/modulefiles:/opt/cray/modulefiles",
+            "PE_LIBSCI_GENCOMPILERS_AOCC_x86_64=2.0",
+            "CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0",
+            "SLURM_GTIDS=0",
+            "LMOD_FAMILY_CRAYPE=craype",
+            "LOGNAME=rwelch",
+            "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/46724/bus",
+            "CRAY_MPICH_VERSION=8.1.23",
+            "XDG_RUNTIME_DIR=/run/user/46724",
+            "MODULEPATH_ROOT=/usr/share/modulefiles",
+            "PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa",
+            "PE_DSMML_PKGCONFIG_LIBS=dsmml",
+            "JRE_HOME=/usr/lib64/jvm/java",
+            "PE_LIBSCI_PKGCONFIG_VARIABLES=PE_LIBSCI_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME",
+            "PE_LIBSCI_GENCOMPS_CRAY_x86_64=90",
+            "XDG_CONFIG_DIRS=/etc/xdg",
+            "PATH=/work/c01/c01/rwelch/anaconda3/bin:/work/y07/shared/apps/core/gromacs/2022.4/bin:/opt/cray/pe/fftw/3.3.10.3/x86_rome/bin:/opt/cray/pe/python/3.9.13.1/bin:/opt/cray/pe/perftools/22.12.0/bin:/opt/cray/pe/papi/6.0.0.17/bin:/opt/cray/pe/craype/2.7.19/bin:/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0/bin:/opt/cray/pe/mpich/8.1.23/bin:/opt/cray/pe/cce/15.0.0/binutils/x86_64/x86_64-pc-linux-gnu/bin:/opt/cray/pe/cce/15.0.0/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../bin:/opt/cray/pe/cce/15.0.0/utils/x86_64/bin:/opt/cray/pe/cce/15.0.0/bin:/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/bin:/work/y07/shared/utils/core/bolt/0.8/bin:/work/y07/shared/utils/core/bin:/opt/cray/libfabric/1.12.1.2.2.0.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/lib/mit/bin:/opt/cray/pe/bin",
+            "PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa",
+            "JAVA_BINDIR=/usr/lib64/jvm/java/bin",
+            "SLURM_JOB_ID=5785211",
+            "_ModuleTable014_=Y2FsL3NoYXJlL21vZHVsZWZpbGVzIiwiL29wdC9jcmF5L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi91c3IvbG9jYWwvc2hhcmUvbW9kdWxlZmlsZXM6L29wdC9jcmF5L21vZHVsZWZpbGVzIix9",
+            "__LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAYPE:1;CRAY_LIBSCI:1;CRAYPE_X86_ROME:1;PERFTOOLS:1;CRAYPAT:1",
+            "__LMOD_REF_COUNT_FORTRAN_SYSTEM_MODULE_NAMES=ftn_lib_definitions:1",
+            "_LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:/opt/cray/modulefiles/libfabric/1.12.1.2.2.0.0:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:/opt/cray/modulefiles/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta:/work/y07/shared/archer2-lmod/utils/core/bolt/0.8.lua:/work/y07/shared/archer2-lmod/utils/core/epcc-setup-env.lua:/usr/local/share/modulefiles/load-epcc-module.lua:/opt/cray/pe/lmod/modulefiles/core/PrgEnv-cray/8.3.3.lua:/opt/cray/pe/lmod/modulefiles/core/cce/15.0.0.lua:/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:/opt/cray/pe/lmod/modulefiles/core/cray-libsci/22.12.1.1.lua:/opt/cray/pe/lmod/modulefiles/comnet/crayclang/14.0/ofi/1.0/cray-mpich/8.1.23.lua:/opt/cray/pe/lmod/modulefiles/core/craype/2.7.19.lua:/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.12.0.lua:/opt/cray/pe/lmod/modulefiles/core/cpe/22.12.lua:/opt/cray/pe/lmod/modulefiles/core/cray-python/3.9.13.1.lua:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0/cray-fftw/3.3.10.3.lua:/work/y07/shared/archer2-lmod/apps/core/gromacs/2022.4.lua",
+            "__LMOD_STACK_SLURM_CPU_FREQ_REQ=MjI1MDAwMA==:MjAwMDAwMA==",
+            "MODULESHOME=/usr/share/lmod/lmod",
+            "PKG_CONFIG_PATH=/opt/cray/pe/fftw/3.3.10.3/x86_rome/lib/pkgconfig:/opt/cray/pe/craype/2.7.19/pkg-config:/opt/cray/pe/dsmml/0.2.2/dsmml/lib/pkgconfig:/opt/cray/libfabric/1.12.1.2.2.0.0/lib64/pkgconfig",
+            "LMOD_SETTARG_FULL_SUPPORT=no",
+            "LIBSCI_BASE_DIR=/opt/cray/pe/libsci/22.12.1.1",
+            "G_BROKEN_FILENAMES=1",
+            "_ModuleTable011_=b29scy1iYXNlLzIyLjEyLjAiLH0seHBtZW09e1siZm4iXT0iL29wdC9jcmF5L21vZHVsZWZpbGVzL3hwbWVtLzIuNS4yLTIuNF8zLjMwX19nZDBmNzkzNi5zaGFzdGEiLFsiZnVsbE5hbWUiXT0ieHBtZW0vMi41LjItMi40XzMuMzBfX2dkMGY3OTM2LnNoYXN0YSIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InhwbWVtIix9LH0sbXBhdGhBPXsiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvcGVyZnRvb2xzLzIyLjEyLjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9tcGkvY3JheWNsYW5nLzE0LjAvb2ZpLzEuMC9jcmF5LW1waWNoLzguMCIsIi9vcHQvY3JheS9wZS9s",
+            "PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa",
+            "HISTSIZE=1000",
+            "CRAYPE_DIR=/opt/cray/pe/craype/2.7.19",
+            "LMOD_PKG=/usr/share/lmod/lmod",
+            "__LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS=mpich:1",
+            "SBATCH_EXPORT=SLURM_CPU_FREQ_REQ,SBATCH_EXPORT",
+            "MPLCONFIGDIR=/tmp/matplotlib-948chfij",
+            "OFFLOAD_INIT=on_start",
+            "__LMOD_REF_COUNT_PE_PKGCONFIG_LIBS=mpich:1;libsci_mpi:1;libsci:1;dsmml:1",
+            "CPU=x86_64",
+            "CRAYPE_VERSION=2.7.19",
+            "INCLUDE_PATH_X86_64=/opt/cray/pe/cce/15.0.0/cce-clang/x86_64/lib/clang/15.0.2/include:/opt/cray/pe/cce/15.0.0/cce/x86_64/include/craylibs",
+            "_ModuleTable005_=aS8yMi4xMi4xLjEubHVhIixbImZ1bGxOYW1lIl09ImNyYXktbGlic2NpLzIyLjEyLjEuMSIsWyJsb2FkT3JkZXIiXT0xMSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LWxpYnNjaS8yMi4xMi4xLjEiLH0sWyJjcmF5LW1waWNoIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L2NyYXljbGFuZy8xNC4wL29maS8xLjAvY3JheS1tcGljaC84LjEuMjMubHVhIixbImZ1bGxOYW1lIl09ImNyYXktbXBpY2gvOC4xLjIzIixbImxvYWRPcmRlciJdPTEyLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktbXBpY2gv",
+            "LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod",
+            "SLURM_LOCALID=0",
+            "CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.23/ofi/crayclang/10.0",
+            "LESSOPEN=lessopen.sh %s",
+            "OMP_NUM_THREADS=16",
+            "CRAYPAT_OPTS_EXECUTABLE=libexec64/opts",
+            "CRAY_XPMEM_INCLUDE_OPTS=-I/opt/cray/xpmem/2.5.2-2.4_3.30__gd0f7936.shasta/include",
+            "PE_LIBSCI_GENCOMPS_GNU_x86_64=91",
+            "LMOD_DIR=/usr/share/lmod/lmod/libexec",
+            "LMOD_FAMILY_MPI=cray-mpich",
+            "BASH_FUNC_module%%=() {  eval $($LMOD_CMD bash \"$@\") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)",
+            "}",
+            "BASH_FUNC_ml%%=() {  eval $($LMOD_DIR/ml_cmd \"$@\")",
+            "}"
+        ]
+    },
+    "version": "0.2",
+    "run": {
+        "Gromacs info": {
+            "GROMACSversion": "2022.4",
+            "Precision": "mixed",
+            "Memorymodel": "64bit",
+            "MPIlibrary": "MPI",
+            "OpenMPsupport": "enabled(GMX_OPENMP_MAX_THREADS=128)",
+            "GPUsupport": "disabled",
+            "SIMDinstructions": "AVX2_256",
+            "CPUFFTlibrary": "fftw-3.3.8-sse2-avx-avx2-avx2_128",
+            "GPUFFTlibrary": "none",
+            "RDTSCPusage": "enabled",
+            "TNGsupport": "enabled",
+            "Hwlocsupport": "disabled",
+            "Tracingsupport": "disabled",
+            "Ccompiler": "/opt/cray/pe/craype/2.7.19/bin/ccClang15.0.2",
+            "Ccompilerflags": "-mavx2-mfma-Wno-missing-field-initializers-O3-DNDEBUG",
+            "C++compiler": "/opt/cray/pe/craype/2.7.19/bin/CCClang15.0.2",
+            "C++compilerflags": "-mavx2-mfma-Wno-reserved-identifier-Wno-missing-field-initializers-Weverything-Wno-c++98-compat-Wno-c++98-compat-pedantic-Wno-source-uses-openmp-Wno-c++17-extensions-Wno-documentation-unknown-command-Wno-covered-switch-default-Wno-switch-enum-Wno-extra-semi-stmt-Wno-weak-vtables-Wno-shadow-Wno-padded-Wno-reserved-id-macro-Wno-double-promotion-Wno-exit-time-destructors-Wno-global-constructors-Wno-documentation-Wno-format-nonliteral-Wno-used-but-marked-unused-Wno-float-equal-Wno-conditional-uninitialized-Wno-conversion-Wno-disabled-macro-expansion-Wno-unused-macros-fopenmp-O3-DNDEBUG"
+        },
+        "Megaflops": {
+            "Pair Search distance check": {
+                "M-Number": "11066.604342",
+                "M-Flops": "99599.439",
+                "% Flops": "0.1"
+            },
+            "NxN Ewald Elec. + LJ [F]": {
+                "M-Number": "913945.771888",
+                "M-Flops": "71287770.207",
+                "% Flops": "57.3"
+            },
+            "NxN Ewald Elec. + LJ [V&F]": {
+                "M-Number": "9239.247456",
+                "M-Flops": "1191862.922",
+                "% Flops": "1.0"
+            },
+            "NxN LJ [F]": {
+                "M-Number": "1.411360",
+                "M-Flops": "63.511",
+                "% Flops": "0.0"
+            },
+            "NxN LJ [V&F]": {
+                "M-Number": "0.014560",
+                "M-Flops": "0.946",
+                "% Flops": "0.0"
+            },
+            "NxN Ewald Elec. [F]": {
+                "M-Number": "812081.063760",
+                "M-Flops": "49536944.889",
+                "% Flops": "39.8"
+            },
+            "NxN Ewald Elec. [V&F]": {
+                "M-Number": "8209.561888",
+                "M-Flops": "689603.199",
+                "% Flops": "0.6"
+            },
+            "1,4 nonbonded interactions": {
+                "M-Number": "85.651713",
+                "M-Flops": "7708.654",
+                "% Flops": "0.0"
+            },
+            "Calc Weights": {
+                "M-Number": "2940.808815",
+                "M-Flops": "105869.117",
+                "% Flops": "0.1"
+            },
+            "Spread Q Bspline": {
+                "M-Number": "62737.254720",
+                "M-Flops": "125474.509",
+                "% Flops": "0.1"
+            },
+            "Gather F Bspline": {
+                "M-Number": "62737.254720",
+                "M-Flops": "376423.528",
+                "% Flops": "0.3"
+            },
+            "3D-FFT": {
+                "M-Number": "110092.223888",
+                "M-Flops": "880737.791",
+                "% Flops": "0.7"
+            },
+            "Solve PME": {
+                "M-Number": "401.030480",
+                "M-Flops": "25665.951",
+                "% Flops": "0.0"
+            },
+            "Reset In Box": {
+                "M-Number": "12.253125",
+                "M-Flops": "36.759",
+                "% Flops": "0.0"
+            },
+            "CG-CoM": {
+                "M-Number": "12.272730",
+                "M-Flops": "36.818",
+                "% Flops": "0.0"
+            },
+            "Bonds": {
+                "M-Number": "16.850337",
+                "M-Flops": "994.170",
+                "% Flops": "0.0"
+            },
+            "Propers": {
+                "M-Number": "74.351487",
+                "M-Flops": "17026.491",
+                "% Flops": "0.0"
+            },
+            "Impropers": {
+                "M-Number": "5.100102",
+                "M-Flops": "1060.821",
+                "% Flops": "0.0"
+            },
+            "Virial": {
+                "M-Number": "116.948385",
+                "M-Flops": "2105.071",
+                "% Flops": "0.0"
+            },
+            "Stop-CM": {
+                "M-Number": "0.411705",
+                "M-Flops": "4.117",
+                "% Flops": "0.0"
+            },
+            "P-Coupling": {
+                "M-Number": "98.044605",
+                "M-Flops": "588.268",
+                "% Flops": "0.0"
+            },
+            "Calc-Ekin": {
+                "M-Number": "196.089210",
+                "M-Flops": "5294.409",
+                "% Flops": "0.0"
+            },
+            "Lincs": {
+                "M-Number": "15.750315",
+                "M-Flops": "945.019",
+                "% Flops": "0.0"
+            },
+            "Lincs-Mat": {
+                "M-Number": "83.401668",
+                "M-Flops": "333.607",
+                "% Flops": "0.0"
+            },
+            "Constraint-V": {
+                "M-Number": "979.669593",
+                "M-Flops": "8817.026",
+                "% Flops": "0.0"
+            },
+            "Constraint-Vir": {
+                "M-Number": "96.409278",
+                "M-Flops": "2313.823",
+                "% Flops": "0.0"
+            },
+            "Settle": {
+                "M-Number": "316.056321",
+                "M-Flops": "116940.839",
+                "% Flops": "0.1"
+            },
+            "CMAP": {
+                "M-Number": "2.200044",
+                "M-Flops": "3740.075",
+                "% Flops": "0.0"
+            },
+            "Urey-Bradley": {
+                "M-Number": "59.151183",
+                "M-Flops": "10824.666",
+                "% Flops": "0.0"
+            }
+        },
+        "Cycles": {
+            "Domain decomp.": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "625",
+                "Wall time (s)": "0.396",
+                "Giga-cycles (total)": "1195.221",
+                "% Runtime": "1.1"
+            },
+            "DD comm. load": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "12",
+                "Wall time (s)": "0.005",
+                "Giga-cycles (total)": "14.414",
+                "% Runtime": "0.0"
+            },
+            "Send X to PME": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "50001",
+                "Wall time (s)": "0.168",
+                "Giga-cycles (total)": "507.355",
+                "% Runtime": "0.5"
+            },
+            "Neighbor search": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "626",
+                "Wall time (s)": "0.236",
+                "Giga-cycles (total)": "713.490",
+                "% Runtime": "0.7"
+            },
+            "Comm. coord.": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "49375",
+                "Wall time (s)": "2.948",
+                "Giga-cycles (total)": "8897.174",
+                "% Runtime": "8.4"
+            },
+            "Force": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "50001",
+                "Wall time (s)": "7.072",
+                "Giga-cycles (total)": "21344.955",
+                "% Runtime": "20.2"
+            },
+            "Wait + Comm. F": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "50001",
+                "Wall time (s)": "3.551",
+                "Giga-cycles (total)": "10718.669",
+                "% Runtime": "10.1"
+            },
+            "PME mesh *": {
+                "Ranks": "20",
+                "Threads": "16",
+                "Calls": "50001",
+                "Wall time (s)": "19.444",
+                "Giga-cycles (total)": "13972.181",
+                "% Runtime": "13.2"
+            },
+            "PME wait": {
+                "Ranks": "for",
+                "Threads": "PP",
+                "Calls": "*",
+                "Wall time (s)": "8.831",
+                "Giga-cycles (total)": "6345.989",
+                "% Runtime": "6.0"
+            },
+            "Wait + Recv. PME F": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "50001",
+                "Wall time (s)": "10.346",
+                "Giga-cycles (total)": "31225.326",
+                "% Runtime": "29.5"
+            },
+            "NB X/F buffer ops.": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "148751",
+                "Wall time (s)": "1.765",
+                "Giga-cycles (total)": "5326.975",
+                "% Runtime": "5.0"
+            },
+            "Write traj.": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "3",
+                "Wall time (s)": "0.005",
+                "Giga-cycles (total)": "16.156",
+                "% Runtime": "0.0"
+            },
+            "Update": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "50001",
+                "Wall time (s)": "0.462",
+                "Giga-cycles (total)": "1395.564",
+                "% Runtime": "1.3"
+            },
+            "Constraints": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "50001",
+                "Wall time (s)": "0.497",
+                "Giga-cycles (total)": "1498.526",
+                "% Runtime": "1.4"
+            },
+            "Comm. energies": {
+                "Ranks": "84",
+                "Threads": "16",
+                "Calls": "5001",
+                "Wall time (s)": "0.518",
+                "Giga-cycles (total)": "1562.169",
+                "% Runtime": "1.5"
+            },
+            "Rest": {
+                "Ranks": "0.367",
+                "Threads": "1106.516",
+                "Calls": "1.0"
+            }
+        },
+        "Infile": {
+            "integrator": "md",
+            "tinit": "0",
+            "dt": "0.002",
+            "nsteps": "50000",
+            "init-step": "0",
+            "simulation-part": "1",
+            "mts": "false",
+            "comm-mode": "Linear",
+            "nstcomm": "2500",
+            "bd-fric": "0",
+            "ld-seed": "2812901079",
+            "emtol": "10",
+            "emstep": "0.01",
+            "niter": "20",
+            "fcstep": "0",
+            "nstcgsteep": "1000",
+            "nbfgscorr": "10",
+            "rtpi": "0.05",
+            "nstxout": "25000",
+            "nstvout": "0",
+            "nstfout": "0",
+            "nstlog": "10000",
+            "nstcalcenergy": "100",
+            "nstenergy": "10000",
+            "nstxout-compressed": "0",
+            "compressed-x-precision": "1000",
+            "cutoff-scheme": "Verlet",
+            "nstlist": "10",
+            "pbc": "xyz",
+            "periodic-molecules": "false",
+            "verlet-buffer-tolerance": "0.005",
+            "rlist": "1.2",
+            "coulombtype": "PME",
+            "coulomb-modifier": "None",
+            "rcoulomb-switch": "0",
+            "rcoulomb": "1.2",
+            "epsilon-r": "1",
+            "epsilon-rf": "inf",
+            "vdw-type": "Cut-off",
+            "vdw-modifier": "Force-switch",
+            "rvdw-switch": "1",
+            "rvdw": "1.2",
+            "DispCorr": "No",
+            "table-extension": "1",
+            "fourierspacing": "0.12",
+            "fourier-nx": "52",
+            "fourier-ny": "48",
+            "fourier-nz": "52",
+            "pme-order": "4",
+            "ewald-rtol": "1e-05",
+            "ewald-rtol-lj": "0.001",
+            "lj-pme-comb-rule": "Geometric",
+            "ewald-geometry": "3d",
+            "epsilon-surface": "0",
+            "tcoupl": "Berendsen",
+            "nsttcouple": "10",
+            "nh-chain-length": "0",
+            "print-nose-hoover-chain-variables": "false",
+            "pcoupl": "Berendsen",
+            "pcoupltype": "Isotropic",
+            "nstpcouple": "10",
+            "tau-p": "5"
+        },
+        "Totals": {
+            "Wall Clock Time (s)": "28.336999999999996",
+            "Number of atoms": "19605.0",
+            "Number of steps": "50000.0",
+            "Timestep (ns)": "2e-06",
+            "Simulation time (ns)": "0.09999999999999998",
+            "step/s": "1764.4775382009384",
+            "ns/s": "0.0035290509259259264",
+            "ns/day": "304.91",
+            "s/step": "0.00056674",
+            "s/ns": "283.36230363057945",
+            "day/ns": "0.0032796562920205967",
+            "Consumed Energy (J)": "170635.0",
+            "J/ns": "1706350.0000000005",
+            "J/step": "3.4127"
+        }
+    },
+    "accounting": {
+        "CPUTimeRAW": "149760",
+        "NodeList": "nid[001448-001449,001452-001458,001460,004088-004090]",
+        "ElapsedRaw": "45",
+        "JobID": "5785211",
+        "ConsumedEnergyRaw": "0"
+    },
+    "slurm": {
+        "slurm": {
+            "nodes": "13",
+            "time": "02:00:00",
+            "job-name": "benchmark",
+            "cpus-per-task": "16",
+            "ntasks-per-node": "8",
+            "partition": "standard",
+            "qos": "standard",
+            "account": "c01-bio",
+            "exclusive": true
+        },
+        "modules": [
+            "gromacs"
+        ],
+        "program": "GROMACS",
+        "arguments": "hpcbench collate -l sysinfo.json run.json accounting.json slurm.json meta.json -o archergmx20katoms.json",
+        "date": 1709322901.8925452
+    },
+    "meta": {
+        "Comment": "help",
+        "Machine": "ARCHER2"
+    },
+    "cpulog": {
+        "97": [
+            "7.8",
+            "1.5",
+            "0.8",
+            "0.5",
+            "0.4",
+            "0.3",
+            "0.3"
+        ],
+        "231": [
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0"
+        ],
+        "227": [
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0"
+        ],
+        "112": [
+            "0.0"
+        ],
+        "128": [
+            "11.4",
+            "45.2",
+            "86.7",
+            "90.8",
+            "93.0",
+            "94.4",
+            "95.2"
+        ],
+        "8": [
+            "46.8",
+            "83.4",
+            "90.9",
+            "93.7",
+            "95.3",
+            "96.2",
+            "96.7"
+        ],
+        "16": [
+            "46.8",
+            "45.2",
+            "51.9",
+            "42.0",
+            "52.5",
+            "61.7",
+            "67.4"
+        ],
+        "24": [
+            "45.8",
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "32": [
+            "44.7",
+            "84.9",
+            "91.7",
+            "94.3",
+            "95.6",
+            "96.5",
+            "97.0"
+        ],
+        "41": [
+            "43.7",
+            "44.1",
+            "50.8",
+            "41.4",
+            "52.0",
+            "61.3",
+            "67.1"
+        ],
+        "54": [
+            "48.9",
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "56": [
+            "45.6",
+            "83.4",
+            "91.0",
+            "93.8",
+            "95.3",
+            "96.2",
+            "96.8"
+        ],
+        "1": [
+            "0.0",
+            "44.9",
+            "0.0",
+            "52.0",
+            "0.0",
+            "42.2",
+            "0.0",
+            "52.6",
+            "0.0",
+            "61.8",
+            "0.0",
+            "67.6"
+        ],
+        "0": [
+            "75.5",
+            "52.1",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "129": [
+            "45.2",
+            "52.0",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "130": [
+            "44.9",
+            "51.9",
+            "42.0",
+            "52.5",
+            "61.7",
+            "67.5"
+        ],
+        "2": [
+            "44.9",
+            "51.7",
+            "42.0",
+            "52.5",
+            "61.7",
+            "67.5"
+        ],
+        "3": [
+            "45.2",
+            "52.0",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "131": [
+            "44.9",
+            "52.0",
+            "42.1",
+            "52.5",
+            "61.8",
+            "67.6"
+        ],
+        "4": [
+            "44.9",
+            "52.1",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "132": [
+            "44.9",
+            "52.0",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "5": [
+            "45.2",
+            "52.0",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "133": [
+            "44.9",
+            "52.0",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "134": [
+            "45.2",
+            "52.0",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "6": [
+            "45.2",
+            "52.1",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "135": [
+            "44.9",
+            "52.0",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "7": [
+            "44.9",
+            "52.1",
+            "42.2",
+            "52.6",
+            "61.8",
+            "67.6"
+        ],
+        "136": [
+            "44.9",
+            "51.7",
+            "42.0",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "137": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "9": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "138": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "10": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "139": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "11": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "12": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "140": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "141": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "13": [
+            "44.9",
+            "51.9",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "14": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "142": [
+            "44.9",
+            "51.7",
+            "42.0",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "15": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "143": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "144": [
+            "83.9",
+            "91.1",
+            "93.9",
+            "95.3",
+            "96.2",
+            "96.8"
+        ],
+        "145": [
+            "45.2",
+            "51.7",
+            "42.0",
+            "52.4",
+            "61.7",
+            "67.4"
+        ],
+        "17": [
+            "45.2",
+            "51.9",
+            "42.0",
+            "52.4",
+            "61.7",
+            "67.4"
+        ],
+        "18": [
+            "45.2",
+            "51.7",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "146": [
+            "44.9",
+            "51.7",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "19": [
+            "45.2",
+            "51.7",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "147": [
+            "45.2",
+            "51.7",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "148": [
+            "45.2",
+            "51.7",
+            "42.0",
+            "52.5",
+            "61.7",
+            "67.5"
+        ],
+        "20": [
+            "45.2",
+            "51.9",
+            "42.0",
+            "52.5",
+            "61.7",
+            "67.4"
+        ],
+        "21": [
+            "44.9",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "149": [
+            "44.9",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "22": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "150": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "23": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "151": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "152": [
+            "83.1",
+            "90.7",
+            "93.7",
+            "95.2",
+            "96.1",
+            "96.6"
+        ],
+        "153": [
+            "44.7",
+            "51.5",
+            "41.8",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "25": [
+            "44.9",
+            "51.5",
+            "41.8",
+            "52.3",
+            "61.5",
+            "67.3"
+        ],
+        "26": [
+            "44.7",
+            "51.5",
+            "41.8",
+            "52.2",
+            "61.5",
+            "67.3"
+        ],
+        "154": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.3"
+        ],
+        "27": [
+            "44.9",
+            "51.6",
+            "41.8",
+            "52.2",
+            "61.5",
+            "67.4"
+        ],
+        "155": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "28": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "156": [
+            "44.9",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "29": [
+            "44.9",
+            "51.5",
+            "41.8",
+            "52.2",
+            "61.5",
+            "67.3"
+        ],
+        "157": [
+            "44.7",
+            "51.5",
+            "41.8",
+            "52.2",
+            "61.5",
+            "67.3"
+        ],
+        "30": [
+            "44.9",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "158": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "31": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.3"
+        ],
+        "159": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.3"
+        ],
+        "160": [
+            "67.2",
+            "84.2",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "33": [
+            "67.2",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "161": [
+            "67.2",
+            "84.2",
+            "78.0",
+            "82.6",
+            "85.0",
+            "86.5"
+        ],
+        "162": [
+            "67.2",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "34": [
+            "67.2",
+            "84.2",
+            "78.0",
+            "82.6",
+            "85.0",
+            "86.5"
+        ],
+        "163": [
+            "66.9",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.0",
+            "86.5"
+        ],
+        "35": [
+            "67.2",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "36": [
+            "67.2",
+            "84.2",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "164": [
+            "67.2",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "37": [
+            "67.2",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "165": [
+            "67.2",
+            "84.2",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "38": [
+            "66.9",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "166": [
+            "66.9",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.0",
+            "86.5"
+        ],
+        "39": [
+            "66.9",
+            "84.2",
+            "78.0",
+            "82.6",
+            "85.0",
+            "86.5"
+        ],
+        "167": [
+            "67.2",
+            "84.3",
+            "78.0",
+            "82.6",
+            "85.1",
+            "86.5"
+        ],
+        "40": [
+            "83.9",
+            "91.2",
+            "94.0",
+            "95.4",
+            "96.3",
+            "96.8"
+        ],
+        "168": [
+            "44.4",
+            "51.1",
+            "41.6",
+            "52.1",
+            "61.4",
+            "67.2"
+        ],
+        "169": [
+            "44.1",
+            "51.0",
+            "41.4",
+            "52.0",
+            "61.3",
+            "67.1"
+        ],
+        "170": [
+            "44.4",
+            "51.0",
+            "41.4",
+            "52.0",
+            "61.3",
+            "67.2"
+        ],
+        "42": [
+            "44.4",
+            "51.0",
+            "41.4",
+            "52.0",
+            "61.3",
+            "67.2"
+        ],
+        "43": [
+            "44.4",
+            "51.0",
+            "41.4",
+            "51.9",
+            "61.3",
+            "67.1"
+        ],
+        "171": [
+            "44.4",
+            "50.8",
+            "41.4",
+            "52.0",
+            "61.3",
+            "67.1"
+        ],
+        "44": [
+            "44.4",
+            "51.0",
+            "41.6",
+            "52.0",
+            "61.4",
+            "67.2"
+        ],
+        "172": [
+            "44.4",
+            "51.1",
+            "41.5",
+            "52.0",
+            "61.3",
+            "67.2"
+        ],
+        "45": [
+            "44.4",
+            "51.0",
+            "41.6",
+            "52.0",
+            "61.3",
+            "67.2"
+        ],
+        "173": [
+            "44.4",
+            "51.0",
+            "41.5",
+            "52.0",
+            "61.4",
+            "67.2"
+        ],
+        "174": [
+            "44.4",
+            "51.1",
+            "41.5",
+            "52.0",
+            "61.3",
+            "67.2"
+        ],
+        "46": [
+            "44.4",
+            "51.1",
+            "41.5",
+            "52.0",
+            "61.4",
+            "67.2"
+        ],
+        "47": [
+            "44.7",
+            "51.1",
+            "41.5",
+            "52.0",
+            "61.3",
+            "67.2"
+        ],
+        "175": [
+            "44.1",
+            "51.1",
+            "41.5",
+            "52.0",
+            "61.3",
+            "67.2"
+        ],
+        "48": [
+            "83.8",
+            "91.1",
+            "93.9",
+            "95.4",
+            "96.3",
+            "96.8"
+        ],
+        "176": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "49": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.2",
+            "61.5",
+            "67.3"
+        ],
+        "177": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "50": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "178": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "51": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "179": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "180": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "52": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "181": [
+            "44.7",
+            "51.5",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "53": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "182": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "183": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.5",
+            "67.4"
+        ],
+        "55": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "184": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.4",
+            "61.6",
+            "67.4"
+        ],
+        "57": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "185": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "58": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "186": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "59": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "187": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "60": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "188": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "189": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "61": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "190": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "62": [
+            "44.9",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "63": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ],
+        "191": [
+            "44.7",
+            "51.6",
+            "41.9",
+            "52.3",
+            "61.6",
+            "67.4"
+        ]
+    }
+}

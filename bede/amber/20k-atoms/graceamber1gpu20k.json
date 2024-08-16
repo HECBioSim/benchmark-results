@@ -1,0 +1,513 @@
+{
+    "sysinfo": {
+        "kernel-release": "5.14.0-362.18.1.el9_3.0.1.aarch64+64k",
+        "CPU": {
+            "Architecture": "aarch64",
+            "CPU op-mode(s)": "64-bit",
+            "Byte Order": "Little Endian",
+            "CPU(s)": "72",
+            "On-line CPU(s) list": "0-71",
+            "Vendor ID": "ARM",
+            "Model name": "Neoverse-V2",
+            "Model": "0",
+            "Thread(s) per core": "1",
+            "Core(s) per socket": "72",
+            "Socket(s)": "1",
+            "Stepping": "r0p0",
+            "Frequency boost": "disabled",
+            "CPU max MHz": "3465.0000",
+            "CPU min MHz": "81.0000",
+            "BogoMIPS": "2000.00",
+            "Flags": "fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb dcpodp sve2 sveaes svepmull svebitperm svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 dgh",
+            "L1d cache": "4.5 MiB (72 instances)",
+            "L1i cache": "4.5 MiB (72 instances)",
+            "L2 cache": "72 MiB (72 instances)",
+            "L3 cache": "114 MiB (1 instance)",
+            "NUMA node(s)": "9",
+            "NUMA node0 CPU(s)": "0-71",
+            "NUMA node1 CPU(s)": "",
+            "NUMA node2 CPU(s)": "",
+            "NUMA node3 CPU(s)": "",
+            "NUMA node4 CPU(s)": "",
+            "NUMA node5 CPU(s)": "",
+            "NUMA node6 CPU(s)": "",
+            "NUMA node7 CPU(s)": "",
+            "NUMA node8 CPU(s)": "",
+            "Vulnerability Gather data sampling": "Not affected",
+            "Vulnerability Itlb multihit": "Not affected",
+            "Vulnerability L1tf": "Not affected",
+            "Vulnerability Mds": "Not affected",
+            "Vulnerability Meltdown": "Not affected",
+            "Vulnerability Mmio stale data": "Not affected",
+            "Vulnerability Retbleed": "Not affected",
+            "Vulnerability Spec rstack overflow": "Not affected",
+            "Vulnerability Spec store bypass": "Mitigation; Speculative Store Bypass disabled via prctl",
+            "Vulnerability Spectre v1": "Mitigation; __user pointer sanitization",
+            "Vulnerability Spectre v2": "Not affected",
+            "Vulnerability Srbds": "Not affected",
+            "Vulnerability Tsx async abort": "Not affected"
+        },
+        "GPU": {
+            "0": {
+                "name": [
+                    "NVIDIA GH200 480GB"
+                ],
+                "pci.bus_id": [
+                    "00000009:01:00.0"
+                ],
+                "driver_version": [
+                    "550.54.14"
+                ],
+                "pstate": [
+                    "P0"
+                ],
+                "count": [
+                    "1"
+                ],
+                "serial": [
+                    "1653923041663"
+                ],
+                "uuid": [
+                    "GPU-7732e987-510a-becd-e1ea-5ef59a150993"
+                ],
+                "pcie.link.gen.max": [
+                    "4"
+                ],
+                "pcie.link.gen.current": [
+                    "4"
+                ],
+                "memory.total [MiB]": [
+                    "97871 MiB",
+                    "97871 MiB"
+                ],
+                "index": [
+                    "0",
+                    "0"
+                ],
+                "accounting.mode": [
+                    "Enabled"
+                ],
+                "vbios_version": [
+                    "96.00.7E.00.02"
+                ],
+                "inforom.oem": [
+                    "2.1"
+                ],
+                "inforom.img": [
+                    "G530.0206.00.02"
+                ],
+                "inforom.pwr": [
+                    "[N/A]"
+                ],
+                "gom.current": [
+                    "[N/A]"
+                ],
+                "clocks.current.sm [MHz]": [
+                    "345 MHz"
+                ],
+                "clocks.current.memory [MHz]": [
+                    "2619 MHz"
+                ],
+                "clocks.current.graphics [MHz]": [
+                    "345 MHz"
+                ]
+            }
+        },
+        "env": [
+            "SHELL=/bin/bash",
+            "PMI_SIZE=1",
+            "SLURM_STEP_NUM_TASKS=1",
+            "PMI_FD=11",
+            "SLURM_JOB_USER=robertwelch",
+            "SLURM_TASKS_PER_NODE=72",
+            "SLURM_JOB_UID=639800512",
+            "HISTCONTROL=ignoredups",
+            "SLURM_CPU_BIND=quiet,mask_cpu:0x00000000000000000F",
+            "SLURM_TASK_PID=98852",
+            "CONDA_EXE=/users/robertwelch/miniforge3/bin/conda",
+            "_CE_M=",
+            "SLURM_JOB_GPUS=0",
+            "SLURM_LOCALID=0",
+            "SLURM_SUBMIT_DIR=/nobackup/projects/bdhbs05/robertwelch/runs/amber/20k-atoms",
+            "SLURM_CPU_BIND_VERBOSE=quiet",
+            "HOSTNAME=gh003",
+            "HISTSIZE=1000",
+            "SLURMD_NODENAME=gh003",
+            "LC_ADDRESS=en_GB.UTF-8",
+            "LC_NAME=en_GB.UTF-8",
+            "SLURM_STEP_NODELIST=gh001",
+            "SLURM_NODE_ALIASES=(null)",
+            "SLURM_CLUSTER_NAME=bede",
+            "SLURM_CPUS_ON_NODE=72",
+            "LC_MONETARY=en_GB.UTF-8",
+            "SLURM_JOB_CPUS_PER_NODE=72",
+            "SBATCH_CONSTRAINT=rhel9",
+            "XML_CATALOG_FILES=file:///users/robertwelch/miniforge3/etc/xml/catalog file:///etc/xml/catalog",
+            "SLURM_GPUS_ON_NODE=1",
+            "SLURM_CONSTRAINT=rhel9",
+            "PWD=/nobackup/projects/bdhbs05/robertwelch/runs/amber/20k-atoms",
+            "KRB5CCNAME=KCM:",
+            "SLURM_GTIDS=0",
+            "LOGNAME=robertwelch",
+            "CONDA_PREFIX=/users/robertwelch/miniforge3",
+            "SLURM_JOB_PARTITION=gh",
+            "MANPATH=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/doc/man:/opt/software/slurm/default/share/man:/opt/software/slurm/default/share/man:/usr/share/man:/opt/puppetlabs/puppet/share/man",
+            "SLURM_JOB_NUM_NODES=1",
+            "TCLLIBPATH=/opt/software/builder/infrastructure/modules/default/default/default/common",
+            "SRUN_DEBUG=3",
+            "_=/users/robertwelch/miniforge3/bin/python",
+            "SLURM_STEPID=0",
+            "SLURM_CPU_BIND_LIST=0x00000000000000000F",
+            "SLURM_JOBID=791078",
+            "SLURM_PTY_PORT=43201",
+            "SLURM_JOB_QOS=normal",
+            "SLURM_LAUNCH_NODE_IPADDR=172.16.41.2",
+            "HOME=/users/robertwelch",
+            "SLURM_PTY_WIN_ROW=61",
+            "LC_PAPER=en_GB.UTF-8",
+            "LANG=en_GB.UTF-8",
+            "SLURM_CPU_BIND_TYPE=mask_cpu:",
+            "SLURM_PROCID=0",
+            "QUICK_BASIS=/users/robertwelch/software/amber22/AmberTools/src/quick/basis",
+            "CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps-791078",
+            "CONDA_PROMPT_MODIFIER=(base) ",
+            "TMPDIR=/tmp",
+            "MODULE_FLAVOUR=cuda/12.3.2//1//default",
+            "PERL5LIB=/users/robertwelch/software/amber22/lib/perl",
+            "SLURM_CPUS_PER_TASK=1",
+            "SLURM_NTASKS=1",
+            "SLURM_TOPOLOGY_ADDR=gh003",
+            "SSH_CONNECTION=206.245.194.186 46526 129.234.28.36 22",
+            "SLURM_DISTRIBUTION=cyclic",
+            "SERVICE_NAME=bede",
+            "SLURM_TOPOLOGY_ADDR_PATTERN=node",
+            "CUDA_VISIBLE_DEVICES=0",
+            "SLURM_SRUN_COMM_HOST=172.16.41.2",
+            "SLURM_SCRIPT_CONTEXT=prolog_task",
+            "SLURM_MEM_PER_NODE=585000",
+            "SLURM_WORKING_CLUSTER=bede:wlm01:6821:9728:109",
+            "TERM=xterm-256color",
+            "LC_IDENTIFICATION=en_GB.UTF-8",
+            "_CE_CONDA=",
+            "LESSOPEN=||/usr/bin/lesspipe.sh %s",
+            "SLURM_PTY_WIN_COL=236",
+            "USER=robertwelch",
+            "LIBRARY_PATH=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/lib64:/opt/software/slurm/default/lib:/opt/software/slurm/default/lib",
+            "SLURM_NODELIST=gh003",
+            "ENVIRONMENT=BATCH",
+            "CONDA_SHLVL=1",
+            "SLURM_SRUN_COMM_PORT=35217",
+            "LOADEDMODULES=slurm/dflt:tools/1.2:user:cuda/12.3.2",
+            "AMBERHOME=/users/robertwelch/software/amber22",
+            "SLURM_STEP_ID=0",
+            "SLURM_JOB_ACCOUNT=bdhbs05",
+            "SLURM_PRIO_PROCESS=0",
+            "SLURM_NPROCS=1",
+            "CUDA_MPS_LOG_DIRECTORY=/tmp/nvidia-mps-791078",
+            "SHLVL=4",
+            "MODULE_FLAVOUR_USER=root",
+            "SLURM_NNODES=1",
+            "LC_TELEPHONE=en_GB.UTF-8",
+            "LC_MEASUREMENT=en_GB.UTF-8",
+            "XDG_SESSION_ID=7997",
+            "SLURM_SUBMIT_HOST=gh001.bede.dur.ac.uk",
+            "PMI_RANK=0",
+            "CONDA_PYTHON_EXE=/users/robertwelch/miniforge3/bin/python",
+            "LD_LIBRARY_PATH=/users/robertwelch/software/amber22/lib:/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/lib64:/opt/software/slurm/default/lib:/opt/software/slurm/default/lib",
+            "XDG_RUNTIME_DIR=/run/user/639800512",
+            "SLURM_JOB_ID=791078",
+            "SLURM_NODEID=0",
+            "S_COLORS=auto",
+            "SLURM_STEP_NUM_NODES=1",
+            "SSH_CLIENT=206.245.194.186 46526 22",
+            "CONDA_DEFAULT_ENV=base",
+            "DEBUGINFOD_URLS=https://debuginfod.centos.org/ ",
+            "LC_TIME=en_GB.UTF-8",
+            "which_declare=declare -f",
+            "SLURM_STEP_TASKS_PER_NODE=1",
+            "SALLOC_CONSTRAINT=rhel9",
+            "CUDA_HOME=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default",
+            "SLURM_MPI_TYPE=pmi2",
+            "PMI_JOBID=791073.0",
+            "SLURM_CONF=/tmp/slurmd/conf-cache/slurm.conf",
+            "PATH=/users/robertwelch/miniforge3/bin:/users/robertwelch/software/amber22/bin:/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/bin:/users/robertwelch/miniforge3/bin:/opt/software/slurm/default/bin:/opt/software/slurm/tools/1.2/bin:/opt/software/slurm/default/bin:/users/robertwelch/miniforge3/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users/robertwelch/.local/bin:/users/robertwelch/bin:/opt/puppetlabs/bin:/users/robertwelch/.local/bin:/users/robertwelch/bin",
+            "SLURM_JOB_NAME=abenchmark",
+            "MODULEPATH=/users/robertwelch/modules/modulefiles:/opt/software/builder/modules/projects:/opt/software/builder/modules/infrastructure:/opt/software/builder/modules/developers/tools:/opt/software/builder/modules/developers/compilers:/opt/software/builder/modules/developers/libraries:/opt/software/builder/modules/applications",
+            "_LMFILES_=/opt/software/builder/modules/infrastructure/slurm/dflt:/opt/software/builder/modules/infrastructure/tools/1.2:/opt/software/builder/modules/infrastructure/user:/opt/software/builder/modules/developers/compilers/cuda/12.3.2",
+            "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/639800512/bus",
+            "MAIL=/var/spool/mail/robertwelch",
+            "SSH_TTY=/dev/pts/11",
+            "SLURM_STEP_LAUNCHER_PORT=35217",
+            "SLURM_JOB_GID=639800512",
+            "CPATH=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/include:/opt/software/slurm/default/include:/opt/software/slurm/default/include",
+            "LC_NUMERIC=en_GB.UTF-8",
+            "OLDPWD=/users/robertwelch",
+            "SLURM_JOB_NODELIST=gh003",
+            "BASH_FUNC_which%%=() {  ( alias;",
+            " eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@",
+            "}",
+            "BASH_FUNC_module%%=() {  eval `/opt/software/builder/infrastructure/modules/default/default/default/Modules/default/bin/modulecmd bash $*`",
+            "}"
+        ]
+    },
+    "version": "0.2",
+    "gpulog": null,
+    "cpulog": {
+        "53": [
+            "81.0",
+            "0.0",
+            "0.0",
+            "0.0"
+        ],
+        "50": [
+            "0.0",
+            "0.0",
+            "0.0"
+        ],
+        "11": [
+            "97.5",
+            "98.9"
+        ]
+    },
+    "power": {
+        "totalpower": [
+            209.523,
+            335.18199999999996,
+            251.386,
+            335.203,
+            251.386,
+            251.40699999999998,
+            293.311,
+            251.40699999999998,
+            335.216,
+            293.332,
+            251.428,
+            167.78199999999998,
+            251.40699999999998,
+            293.284,
+            335.23699999999997
+        ],
+        "gracepower": [
+            46.479,
+            44.849,
+            45.495999999999995,
+            45.169,
+            44.513999999999996,
+            45.504,
+            3.2729999999999997,
+            45.497,
+            45.495999999999995,
+            45.177,
+            44.195,
+            45.541,
+            1.636,
+            45.504,
+            45.177
+        ],
+        "cpupower": [
+            41.897,
+            41.903999999999996,
+            41.897,
+            41.897,
+            41.897,
+            41.903999999999996,
+            0.0,
+            41.897,
+            41.897,
+            41.903999999999996,
+            41.903999999999996,
+            41.937999999999995,
+            0.0,
+            41.903999999999996,
+            41.903999999999996
+        ],
+        "iopower": [
+            0.654,
+            0.982,
+            0.981,
+            0.654,
+            0.654,
+            0.982,
+            0.654,
+            0.981,
+            0.981,
+            0.654,
+            0.982,
+            0.982,
+            0.982,
+            0.982,
+            0.654
+        ],
+        "Totals": {
+            "Total Energy (J)": 4106.491,
+            "Total Grace Energy (J)": 593.5070000000001,
+            "Total CPU Energy (J)": 544.7439999999999,
+            "Total IO Energy (J)": 12.758999999999997
+        }
+    },
+    "run": {
+        "AMBER info": {},
+        "Infile": {
+            "imin": "0",
+            "irest": "1",
+            "nstlim": "50000",
+            "dt": "0.002",
+            "ntx": "5",
+            "ntt": "1",
+            "temp0": "300.0",
+            "tautp": "1.0",
+            "ntb": "2",
+            "ntp": "1",
+            "pres0": "1.0",
+            "taup": "5.0",
+            "ntc": "2",
+            "ntf": "2",
+            "ioutfm": "1",
+            "ntpr": "10000",
+            "ntwr": "25000",
+            "ntwe": "0",
+            "ntwx": "25000",
+            "| irandom": "1"
+        },
+        "Totals": {
+            "Wall Clock Time (s)": 14.74,
+            "Number of atoms": 19605.0,
+            "Number of steps": 50000.0,
+            "Timestep (ns)": 2.0000000000000003e-06,
+            "Simulation time (ns)": 0.1,
+            "step/s": 3448.275862068965,
+            "ns/s": 0.006784606481481481,
+            "ns/day": 586.19,
+            "s/step": 0.00029,
+            "s/ns": 147.39,
+            "day/ns": 0.0017059315239086302,
+            "Consumed Energy (J)": 4106.491,
+            "J/ns": 41064.91,
+            "J/step": 0.08212982
+        },
+        "Major Routines": {
+            "Routine": {
+                "Sec": "Sec",
+                "%": "%"
+            },
+            "Nonbond": {
+                "Sec": "11.44",
+                "%": "77.82"
+            },
+            "Bond": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Angle": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Dihedral": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Shake": {
+                "Sec": "0.18",
+                "%": "1.24"
+            },
+            "RunMD": {
+                "Sec": "3.03",
+                "%": "20.62"
+            },
+            "Other": {
+                "Sec": "0.05",
+                "%": "0.32"
+            }
+        },
+        "PME Nonbond Pairlist": {
+            "Routine": {
+                "Sec": "Sec",
+                "%": "%"
+            },
+            "Set Up Cit": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Build List": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Total": {
+                "Sec": "0.00",
+                "%": "0.00"
+            }
+        },
+        "PME Direct Force": {
+            "Routine": {
+                "Sec": "Sec",
+                "%": "%"
+            },
+            "NonBonded Calc": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Exclude Masked": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Other": {
+                "Sec": "0.03",
+                "%": "0.19"
+            },
+            "Total": {
+                "Sec": "0.03",
+                "%": "0.19"
+            }
+        },
+        "PME Reciprocal Force": {
+            "Routine": {
+                "Sec": "Sec",
+                "%": "%"
+            },
+            "1D bspline": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Grid Charges": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Scalar Sum": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Gradient Sum": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "FFT": {
+                "Sec": "0.00",
+                "%": "0.00"
+            },
+            "Total": {
+                "Sec": "0.00",
+                "%": "0.00"
+            }
+        }
+    },
+    "slurm": {
+        "slurm": {
+            "account": "bdhbs05",
+            "time": "1:0:0",
+            "partition": "gh",
+            "gres": "gpu:1",
+            "job-name": "abenchmark"
+        },
+        "modules": [
+            "cuda/12.3.2"
+        ],
+        "program": "AMBER",
+        "arguments": "pmemd.cuda -O -i benchmark.in -p benchmark.top -c benchmark.rst -ref benchmark.rst -o benchmark.mdout -r benchmark2.rst -x benchmark.nc",
+        "date": 1710275065.9003725
+    },
+    "meta": {
+        "MD": "AMBER22",
+        "Machine": "Grace Hopper Testbed",
+        "comment": "20k"
+    }
+}

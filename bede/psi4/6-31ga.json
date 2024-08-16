@@ -1,0 +1,289 @@
+{
+    "sysinfo": {
+        "kernel-release": "5.14.0-427.24.1.el9_4.aarch64+64k",
+        "CPU": {
+            "Architecture": "aarch64",
+            "CPU op-mode(s)": "64-bit",
+            "Byte Order": "Little Endian",
+            "CPU(s)": "72",
+            "On-line CPU(s) list": "0-71",
+            "Vendor ID": "ARM",
+            "Model name": "Neoverse-V2",
+            "Model": "0",
+            "Thread(s) per core": "1",
+            "Core(s) per socket": "72",
+            "Socket(s)": "1",
+            "Stepping": "r0p0",
+            "Frequency boost": "disabled",
+            "CPU(s) scaling MHz": "95%",
+            "CPU max MHz": "3465.0000",
+            "CPU min MHz": "81.0000",
+            "BogoMIPS": "2000.00",
+            "Flags": "fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb dcpodp sve2 sveaes svepmull svebitperm svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 dgh",
+            "L1d cache": "4.5 MiB (72 instances)",
+            "L1i cache": "4.5 MiB (72 instances)",
+            "L2 cache": "72 MiB (72 instances)",
+            "L3 cache": "114 MiB (1 instance)",
+            "NUMA node(s)": "9",
+            "NUMA node0 CPU(s)": "0-71",
+            "NUMA node1 CPU(s)": "",
+            "NUMA node2 CPU(s)": "",
+            "NUMA node3 CPU(s)": "",
+            "NUMA node4 CPU(s)": "",
+            "NUMA node5 CPU(s)": "",
+            "NUMA node6 CPU(s)": "",
+            "NUMA node7 CPU(s)": "",
+            "NUMA node8 CPU(s)": "",
+            "Vulnerability Gather data sampling": "Not affected",
+            "Vulnerability Itlb multihit": "Not affected",
+            "Vulnerability L1tf": "Not affected",
+            "Vulnerability Mds": "Not affected",
+            "Vulnerability Meltdown": "Not affected",
+            "Vulnerability Mmio stale data": "Not affected",
+            "Vulnerability Retbleed": "Not affected",
+            "Vulnerability Spec rstack overflow": "Not affected",
+            "Vulnerability Spec store bypass": "Mitigation; Speculative Store Bypass disabled via prctl",
+            "Vulnerability Spectre v1": "Mitigation; __user pointer sanitization",
+            "Vulnerability Spectre v2": "Not affected",
+            "Vulnerability Srbds": "Not affected",
+            "Vulnerability Tsx async abort": "Not affected"
+        },
+        "GPU": {
+            "0": {
+                "name": [
+                    "NVIDIA GH200 480GB"
+                ],
+                "pci.bus_id": [
+                    "00000009:01:00.0"
+                ],
+                "driver_version": [
+                    "555.42.06"
+                ],
+                "pstate": [
+                    "P0"
+                ],
+                "count": [
+                    "1"
+                ],
+                "serial": [
+                    "1653923041663"
+                ],
+                "uuid": [
+                    "GPU-7732e987-510a-becd-e1ea-5ef59a150993"
+                ],
+                "pcie.link.gen.max": [
+                    "4"
+                ],
+                "pcie.link.gen.current": [
+                    "4"
+                ],
+                "memory.total [MiB]": [
+                    "97871 MiB",
+                    "97871 MiB"
+                ],
+                "index": [
+                    "0",
+                    "0"
+                ],
+                "accounting.mode": [
+                    "Enabled"
+                ],
+                "vbios_version": [
+                    "96.00.7E.00.02"
+                ],
+                "inforom.oem": [
+                    "2.1"
+                ],
+                "inforom.img": [
+                    "G530.0206.00.02"
+                ],
+                "inforom.pwr": [
+                    "[N/A]"
+                ],
+                "gom.current": [
+                    "[N/A]"
+                ],
+                "clocks.current.sm [MHz]": [
+                    "345 MHz"
+                ],
+                "clocks.current.memory [MHz]": [
+                    "2619 MHz"
+                ],
+                "clocks.current.graphics [MHz]": [
+                    "345 MHz"
+                ]
+            }
+        },
+        "env": [
+            "SHELL=/bin/bash",
+            "PMI_SIZE=1",
+            "SLURM_STEP_NUM_TASKS=1",
+            "PMI_FD=11",
+            "SLURM_JOB_USER=robertwelch",
+            "SLURM_TASKS_PER_NODE=72",
+            "SLURM_JOB_UID=639800512",
+            "HISTCONTROL=ignoredups",
+            "SLURM_CPU_BIND=quiet,mask_cpu:0x00000000000000000F",
+            "SLURM_TASK_PID=228097",
+            "CONDA_EXE=/nobackup/projects/bdhbs05/robertwelch/miniforge3/bin/conda",
+            "_CE_M=",
+            "SLURM_JOB_GPUS=0",
+            "SLURM_LOCALID=0",
+            "SLURM_SUBMIT_DIR=/nobackup/projects/bdhbs05/robertwelch/runs/psi4/psi4bmrun2",
+            "SLURM_CPU_BIND_VERBOSE=quiet",
+            "HISTSIZE=1000",
+            "HOSTNAME=gh003",
+            "SLURMD_NODENAME=gh003",
+            "SLURM_STEP_NODELIST=gh001",
+            "SLURM_NODE_ALIASES=(null)",
+            "SLURM_CLUSTER_NAME=bede",
+            "SLURM_CPUS_ON_NODE=72",
+            "SLURM_JOB_CPUS_PER_NODE=72",
+            "SBATCH_CONSTRAINT=rhel9",
+            "XML_CATALOG_FILES=file:///nobackup/projects/bdhbs05/robertwelch/miniforge3/envs/psi4dev/etc/xml/catalog file:///etc/xml/catalog",
+            "SLURM_GPUS_ON_NODE=1",
+            "SLURM_CONSTRAINT=rhel9",
+            "KRB5CCNAME=KCM:",
+            "PWD=/nobackup/projects/bdhbs05/robertwelch/runs/psi4/psi4bmrun2",
+            "SLURM_GTIDS=0",
+            "GSETTINGS_SCHEMA_DIR=/nobackup/projects/bdhbs05/robertwelch/miniforge3/envs/psi4dev/share/glib-2.0/schemas",
+            "LOGNAME=robertwelch",
+            "CONDA_PREFIX=/nobackup/projects/bdhbs05/robertwelch/miniforge3/envs/psi4dev",
+            "SLURM_JOB_PARTITION=gh",
+            "MANPATH=/opt/software/builder/developers/compilers/gcc/13.2/1/default/share/man:/opt/software/slurm/default/share/man:/opt/software/slurm/default/share/man:/usr/share/man:/opt/puppetlabs/puppet/share/man",
+            "GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=",
+            "SLURM_JOB_NUM_NODES=1",
+            "TCLLIBPATH=/opt/software/builder/infrastructure/modules/default/default/default/common",
+            "CXX=g++",
+            "SRUN_DEBUG=3",
+            "_=/nobackup/projects/bdhbs05/robertwelch/miniforge3/envs/psi4dev/bin/python",
+            "SLURM_STEPID=0",
+            "SLURM_CPU_BIND_LIST=0x00000000000000000F",
+            "SLURM_JOBID=823408",
+            "SLURM_PTY_PORT=42931",
+            "SLURM_LAUNCH_NODE_IPADDR=172.16.41.1",
+            "SLURM_JOB_QOS=normal",
+            "SLURM_PTY_WIN_ROW=31",
+            "HOME=/users/robertwelch",
+            "LANG=en_US.UTF-8",
+            "SLURM_CPU_BIND_TYPE=mask_cpu:",
+            "SLURM_PROCID=0",
+            "GCC_HOME=/opt/software/builder/developers/compilers/gcc/13.2/1/default",
+            "CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps-823408",
+            "CONDA_PROMPT_MODIFIER=(psi4dev) ",
+            "TMPDIR=/tmp",
+            "MODULE_FLAVOUR=gcc/13.2//1//default",
+            "SLURM_CPUS_PER_TASK=1",
+            "SLURM_NTASKS=1",
+            "SLURM_TOPOLOGY_ADDR=gh003",
+            "SSH_CONNECTION=188.74.84.95 21068 129.234.28.35 22",
+            "SLURM_DISTRIBUTION=cyclic",
+            "SERVICE_NAME=bede",
+            "INFOPATH=/opt/software/builder/developers/compilers/gcc/13.2/1/default/share/info",
+            "SLURM_TOPOLOGY_ADDR_PATTERN=node",
+            "CUDA_VISIBLE_DEVICES=0",
+            "SLURM_SRUN_COMM_HOST=172.16.41.1",
+            "SLURM_SCRIPT_CONTEXT=prolog_task",
+            "SLURM_MEM_PER_NODE=585000",
+            "SLURM_WORKING_CLUSTER=bede:head2.bede.dur.ac.uk:6821:9728:109",
+            "PYTHONPATH=/nobackup/projects/bdhbs05/robertwelch/miniforge3/envs/psi4dev/lib:",
+            "TERM=xterm-256color",
+            "_CE_CONDA=",
+            "F77=gfortran",
+            "SLURM_PTY_WIN_COL=135",
+            "LESSOPEN=||/usr/bin/lesspipe.sh %s",
+            "USER=robertwelch",
+            "LIBRARY_PATH=/opt/software/builder/developers/compilers/gcc/13.2/1/default/lib64:/opt/software/builder/developers/compilers/gcc/13.2/1/default/lib:/opt/software/slurm/default/lib:/opt/software/slurm/default/lib",
+            "SLURM_NODELIST=gh003",
+            "ENVIRONMENT=BATCH",
+            "CONDA_SHLVL=2",
+            "SLURM_SRUN_COMM_PORT=42321",
+            "LOADEDMODULES=slurm/dflt:tools/1.2:user:gcc/13.2",
+            "SLURM_STEP_ID=0",
+            "SLURM_JOB_ACCOUNT=bdhbs05",
+            "F90=gfortran",
+            "SLURM_PRIO_PROCESS=0",
+            "SLURM_NPROCS=1",
+            "CUDA_MPS_LOG_DIRECTORY=/tmp/nvidia-mps-823408",
+            "SHLVL=4",
+            "MODULE_FLAVOUR_USER=root",
+            "SLURM_NNODES=1",
+            "XDG_SESSION_ID=22309",
+            "SLURM_SUBMIT_HOST=gh001.bede.dur.ac.uk",
+            "PMI_RANK=0",
+            "CONDA_PYTHON_EXE=/nobackup/projects/bdhbs05/robertwelch/miniforge3/bin/python",
+            "LD_LIBRARY_PATH=/opt/software/builder/developers/compilers/gcc/13.2/1/default/lib64:/opt/software/builder/developers/compilers/gcc/13.2/1/default/lib:/opt/software/slurm/default/lib:/opt/software/slurm/default/lib",
+            "XDG_RUNTIME_DIR=/run/user/639800512",
+            "SLURM_JOB_ID=823408",
+            "SLURM_NODEID=0",
+            "S_COLORS=auto",
+            "SLURM_STEP_NUM_NODES=1",
+            "SSH_CLIENT=188.74.84.95 21068 22",
+            "CONDA_DEFAULT_ENV=psi4dev",
+            "DEBUGINFOD_URLS=https://debuginfod.centos.org/ ",
+            "PSI_SCRATCH=/nobackup/projects/bdhbs05/robertwelch/psi4scratch",
+            "OMP_NUM_THREADS=72",
+            "FC=gfortran",
+            "which_declare=declare -f",
+            "SLURM_STEP_TASKS_PER_NODE=1",
+            "SALLOC_CONSTRAINT=rhel9",
+            "SLURM_MPI_TYPE=pmi2",
+            "XDG_DATA_DIRS=/users/robertwelch/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+            "PMI_JOBID=823407.0",
+            "SLURM_CONF=/tmp/slurmd/conf-cache/slurm.conf",
+            "PATH=/nobackup/projects/bdhbs05/robertwelch/miniforge3/envs/psi4dev/bin:/opt/software/builder/developers/compilers/gcc/13.2/1/default/bin.wrapper:/opt/software/builder/developers/compilers/gcc/13.2/1/default/bin:/nobackup/projects/bdhbs05/robertwelch/miniforge3/envs/psi4dev/bin:/opt/software/slurm/default/bin:/opt/software/slurm/tools/1.2/bin:/opt/software/slurm/default/bin:/nobackup/projects/bdhbs05/robertwelch/miniforge3/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users/robertwelch/.local/bin:/users/robertwelch/bin:/opt/puppetlabs/bin:/users/robertwelch/.local/bin:/users/robertwelch/bin",
+            "SLURM_JOB_NAME=gbenchmark",
+            "MODULEPATH=/users/robertwelch/modules/modulefiles:/opt/software/builder/modules/projects:/opt/software/builder/modules/infrastructure:/opt/software/builder/modules/developers/tools:/opt/software/builder/modules/developers/compilers:/opt/software/builder/modules/developers/libraries:/opt/software/builder/modules/applications",
+            "GCC_BUILD_MODULES=cuda/11.7.0",
+            "CC=gcc",
+            "_LMFILES_=/opt/software/builder/modules/infrastructure/slurm/dflt:/opt/software/builder/modules/infrastructure/tools/1.2:/opt/software/builder/modules/infrastructure/user:/opt/software/builder/modules/developers/compilers/gcc/13.2",
+            "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/639800512/bus",
+            "MAIL=/var/spool/mail/robertwelch",
+            "SSH_TTY=/dev/pts/18",
+            "CONDA_PREFIX_1=/nobackup/projects/bdhbs05/robertwelch/miniforge3",
+            "SLURM_STEP_LAUNCHER_PORT=42321",
+            "SLURM_JOB_GID=639800512",
+            "CPATH=/opt/software/builder/developers/compilers/gcc/13.2/1/default/include:/opt/software/slurm/default/include:/opt/software/slurm/default/include",
+            "OLDPWD=/nobackup/projects/bdhbs05/robertwelch",
+            "SLURM_JOB_NODELIST=gh003",
+            "BASH_FUNC_which%%=() {  ( alias;",
+            " eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@",
+            "}",
+            "BASH_FUNC_module%%=() {  eval `/opt/software/builder/infrastructure/modules/default/default/default/Modules/default/bin/modulecmd bash $*`",
+            "}"
+        ]
+    },
+    "version": "0.2",
+    "cpulog": {},
+    "slurm": {
+        "slurm": {
+            "account": "bdhbs05",
+            "time": "12:0:0",
+            "partition": "gh",
+            "gres": "gpu:1",
+            "job-name": "gbenchmark"
+        },
+        "modules": [
+            "gcc/13.2"
+        ],
+        "program": "unknown",
+        "arguments": "",
+        "date": 1723164003.5592647
+    },
+    "meta": {
+        "QM": "Psi4",
+        "Machine": "BEDE-GH",
+        "comment": "none",
+        "basis": "6-31g*"
+    },
+    "Accounting": {
+        "ConsumedEnergyRaw": "0",
+        "CPUTimeRAW": "17568",
+        "ElapsedRaw": "244",
+        "JobID": "823408",
+        "State": "COMPLETED",
+        "ExitCode": "0:0",
+        "AveRSS": "8414080K",
+        "MaxRSS": "8414080K"
+    }
+}

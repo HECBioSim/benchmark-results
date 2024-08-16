@@ -1,0 +1,8 @@
+*.*
+!.gitattributes
+!.gitignore
+!readme.md
+!sample_plots.sh
+!.gitkeep
+!*.json
+isambard

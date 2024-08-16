@@ -1,0 +1,881 @@
+{
+    "sysinfo": {
+        "kernel-release": "5.14.0-362.18.1.el9_3.0.1.aarch64+64k",
+        "CPU": {
+            "Architecture": "aarch64",
+            "CPU op-mode(s)": "64-bit",
+            "Byte Order": "Little Endian",
+            "CPU(s)": "72",
+            "On-line CPU(s) list": "0-71",
+            "Vendor ID": "ARM",
+            "Model name": "Neoverse-V2",
+            "Model": "0",
+            "Thread(s) per core": "1",
+            "Core(s) per socket": "72",
+            "Socket(s)": "1",
+            "Stepping": "r0p0",
+            "Frequency boost": "disabled",
+            "CPU max MHz": "3465.0000",
+            "CPU min MHz": "81.0000",
+            "BogoMIPS": "2000.00",
+            "Flags": "fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb dcpodp sve2 sveaes svepmull svebitperm svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 dgh",
+            "L1d cache": "4.5 MiB (72 instances)",
+            "L1i cache": "4.5 MiB (72 instances)",
+            "L2 cache": "72 MiB (72 instances)",
+            "L3 cache": "114 MiB (1 instance)",
+            "NUMA node(s)": "9",
+            "NUMA node0 CPU(s)": "0-71",
+            "NUMA node1 CPU(s)": "",
+            "NUMA node2 CPU(s)": "",
+            "NUMA node3 CPU(s)": "",
+            "NUMA node4 CPU(s)": "",
+            "NUMA node5 CPU(s)": "",
+            "NUMA node6 CPU(s)": "",
+            "NUMA node7 CPU(s)": "",
+            "NUMA node8 CPU(s)": "",
+            "Vulnerability Gather data sampling": "Not affected",
+            "Vulnerability Itlb multihit": "Not affected",
+            "Vulnerability L1tf": "Not affected",
+            "Vulnerability Mds": "Not affected",
+            "Vulnerability Meltdown": "Not affected",
+            "Vulnerability Mmio stale data": "Not affected",
+            "Vulnerability Retbleed": "Not affected",
+            "Vulnerability Spec rstack overflow": "Not affected",
+            "Vulnerability Spec store bypass": "Mitigation; Speculative Store Bypass disabled via prctl",
+            "Vulnerability Spectre v1": "Mitigation; __user pointer sanitization",
+            "Vulnerability Spectre v2": "Not affected",
+            "Vulnerability Srbds": "Not affected",
+            "Vulnerability Tsx async abort": "Not affected"
+        },
+        "GPU": {
+            "0": {
+                "name": [
+                    "NVIDIA GH200 480GB"
+                ],
+                "pci.bus_id": [
+                    "00000009:01:00.0"
+                ],
+                "driver_version": [
+                    "550.54.14"
+                ],
+                "pstate": [
+                    "P0"
+                ],
+                "count": [
+                    "1"
+                ],
+                "serial": [
+                    "1653923041663"
+                ],
+                "uuid": [
+                    "GPU-7732e987-510a-becd-e1ea-5ef59a150993"
+                ],
+                "pcie.link.gen.max": [
+                    "4"
+                ],
+                "pcie.link.gen.current": [
+                    "4"
+                ],
+                "memory.total [MiB]": [
+                    "97871 MiB",
+                    "97871 MiB"
+                ],
+                "index": [
+                    "0",
+                    "0"
+                ],
+                "accounting.mode": [
+                    "Enabled"
+                ],
+                "vbios_version": [
+                    "96.00.7E.00.02"
+                ],
+                "inforom.oem": [
+                    "2.1"
+                ],
+                "inforom.img": [
+                    "G530.0206.00.02"
+                ],
+                "inforom.pwr": [
+                    "[N/A]"
+                ],
+                "gom.current": [
+                    "[N/A]"
+                ],
+                "clocks.current.sm [MHz]": [
+                    "345 MHz"
+                ],
+                "clocks.current.memory [MHz]": [
+                    "2619 MHz"
+                ],
+                "clocks.current.graphics [MHz]": [
+                    "345 MHz"
+                ]
+            }
+        },
+        "env": [
+            "SHELL=/bin/bash",
+            "PMI_SIZE=1",
+            "SLURM_STEP_NUM_TASKS=1",
+            "PMI_FD=11",
+            "SLURM_JOB_USER=robertwelch",
+            "SLURM_TASKS_PER_NODE=72",
+            "SLURM_JOB_UID=639800512",
+            "HISTCONTROL=ignoredups",
+            "SLURM_CPU_BIND=quiet,mask_cpu:0x00000000000000000F",
+            "SLURM_TASK_PID=116211",
+            "CONDA_EXE=/users/robertwelch/miniforge3/bin/conda",
+            "_CE_M=",
+            "SLURM_JOB_GPUS=0",
+            "SLURM_LOCALID=0",
+            "SLURM_SUBMIT_DIR=/nobackup/projects/bdhbs05/robertwelch/runs/gromacs/20k-atoms",
+            "SLURM_CPU_BIND_VERBOSE=quiet",
+            "HOSTNAME=gh003",
+            "HISTSIZE=1000",
+            "SLURMD_NODENAME=gh003",
+            "LC_ADDRESS=en_GB.UTF-8",
+            "LC_NAME=en_GB.UTF-8",
+            "SLURM_STEP_NODELIST=gh001",
+            "SLURM_NODE_ALIASES=(null)",
+            "SLURM_CLUSTER_NAME=bede",
+            "SLURM_CPUS_ON_NODE=72",
+            "LC_MONETARY=en_GB.UTF-8",
+            "SLURM_JOB_CPUS_PER_NODE=72",
+            "SBATCH_CONSTRAINT=rhel9",
+            "XML_CATALOG_FILES=file:///users/robertwelch/miniforge3/etc/xml/catalog file:///etc/xml/catalog",
+            "SLURM_GPUS_ON_NODE=1",
+            "SLURM_CONSTRAINT=rhel9",
+            "PWD=/nobackup/projects/bdhbs05/robertwelch/runs/gromacs/20k-atoms",
+            "KRB5CCNAME=KCM:",
+            "SLURM_GTIDS=0",
+            "LOGNAME=robertwelch",
+            "CONDA_PREFIX=/users/robertwelch/miniforge3",
+            "SLURM_JOB_PARTITION=gh",
+            "MANPATH=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/doc/man:/opt/software/slurm/default/share/man:/opt/software/slurm/default/share/man:/usr/share/man:/opt/puppetlabs/puppet/share/man",
+            "SLURM_JOB_NUM_NODES=1",
+            "TCLLIBPATH=/opt/software/builder/infrastructure/modules/default/default/default/common",
+            "SRUN_DEBUG=3",
+            "_=/users/robertwelch/miniforge3/bin/python",
+            "SLURM_STEPID=0",
+            "SLURM_CPU_BIND_LIST=0x00000000000000000F",
+            "SLURM_JOBID=791213",
+            "SLURM_PTY_PORT=32843",
+            "SLURM_JOB_QOS=normal",
+            "SLURM_LAUNCH_NODE_IPADDR=172.16.41.2",
+            "HOME=/users/robertwelch",
+            "SLURM_PTY_WIN_ROW=61",
+            "LC_PAPER=en_GB.UTF-8",
+            "LANG=en_GB.UTF-8",
+            "SLURM_CPU_BIND_TYPE=mask_cpu:",
+            "SLURM_PROCID=0",
+            "CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps-791213",
+            "CONDA_PROMPT_MODIFIER=(base) ",
+            "TMPDIR=/tmp",
+            "MODULE_FLAVOUR=cuda/12.3.2//1//default",
+            "SLURM_CPUS_PER_TASK=1",
+            "SLURM_NTASKS=1",
+            "SLURM_TOPOLOGY_ADDR=gh003",
+            "SSH_CONNECTION=206.245.194.186 46526 129.234.28.36 22",
+            "SLURM_DISTRIBUTION=cyclic",
+            "SERVICE_NAME=bede",
+            "SLURM_TOPOLOGY_ADDR_PATTERN=node",
+            "CUDA_VISIBLE_DEVICES=0",
+            "SLURM_SRUN_COMM_HOST=172.16.41.2",
+            "SLURM_SCRIPT_CONTEXT=prolog_task",
+            "SLURM_MEM_PER_NODE=585000",
+            "SLURM_WORKING_CLUSTER=bede:wlm01:6821:9728:109",
+            "TERM=xterm-256color",
+            "LC_IDENTIFICATION=en_GB.UTF-8",
+            "_CE_CONDA=",
+            "LESSOPEN=||/usr/bin/lesspipe.sh %s",
+            "SLURM_PTY_WIN_COL=236",
+            "USER=robertwelch",
+            "LIBRARY_PATH=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/lib64:/opt/software/slurm/default/lib:/opt/software/slurm/default/lib",
+            "SLURM_NODELIST=gh003",
+            "ENVIRONMENT=BATCH",
+            "CONDA_SHLVL=1",
+            "SLURM_SRUN_COMM_PORT=36627",
+            "LOADEDMODULES=slurm/dflt:tools/1.2:user:cuda/12.3.2",
+            "SLURM_STEP_ID=0",
+            "SLURM_JOB_ACCOUNT=bdhbs05",
+            "SLURM_PRIO_PROCESS=0",
+            "SLURM_NPROCS=1",
+            "CUDA_MPS_LOG_DIRECTORY=/tmp/nvidia-mps-791213",
+            "SHLVL=4",
+            "MODULE_FLAVOUR_USER=root",
+            "SLURM_NNODES=1",
+            "LC_TELEPHONE=en_GB.UTF-8",
+            "LC_MEASUREMENT=en_GB.UTF-8",
+            "XDG_SESSION_ID=7997",
+            "SLURM_SUBMIT_HOST=gh001.bede.dur.ac.uk",
+            "PMI_RANK=0",
+            "CONDA_PYTHON_EXE=/users/robertwelch/miniforge3/bin/python",
+            "LD_LIBRARY_PATH=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/lib64:/opt/software/slurm/default/lib:/opt/software/slurm/default/lib",
+            "XDG_RUNTIME_DIR=/run/user/639800512",
+            "SLURM_JOB_ID=791213",
+            "SLURM_NODEID=0",
+            "S_COLORS=auto",
+            "SLURM_STEP_NUM_NODES=1",
+            "SSH_CLIENT=206.245.194.186 46526 22",
+            "CONDA_DEFAULT_ENV=base",
+            "DEBUGINFOD_URLS=https://debuginfod.centos.org/ ",
+            "LC_TIME=en_GB.UTF-8",
+            "which_declare=declare -f",
+            "SLURM_STEP_TASKS_PER_NODE=1",
+            "SALLOC_CONSTRAINT=rhel9",
+            "CUDA_HOME=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default",
+            "SLURM_MPI_TYPE=pmi2",
+            "PMI_JOBID=791203.0",
+            "SLURM_CONF=/tmp/slurmd/conf-cache/slurm.conf",
+            "PATH=/users/robertwelch/miniforge3/bin:/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/bin:/users/robertwelch/miniforge3/bin:/opt/software/slurm/default/bin:/opt/software/slurm/tools/1.2/bin:/opt/software/slurm/default/bin:/users/robertwelch/miniforge3/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/users/robertwelch/.local/bin:/users/robertwelch/bin:/opt/puppetlabs/bin:/users/robertwelch/.local/bin:/users/robertwelch/bin",
+            "SLURM_JOB_NAME=gbenchmark",
+            "MODULEPATH=/users/robertwelch/modules/modulefiles:/opt/software/builder/modules/projects:/opt/software/builder/modules/infrastructure:/opt/software/builder/modules/developers/tools:/opt/software/builder/modules/developers/compilers:/opt/software/builder/modules/developers/libraries:/opt/software/builder/modules/applications",
+            "_LMFILES_=/opt/software/builder/modules/infrastructure/slurm/dflt:/opt/software/builder/modules/infrastructure/tools/1.2:/opt/software/builder/modules/infrastructure/user:/opt/software/builder/modules/developers/compilers/cuda/12.3.2",
+            "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/639800512/bus",
+            "MAIL=/var/spool/mail/robertwelch",
+            "SSH_TTY=/dev/pts/11",
+            "SLURM_STEP_LAUNCHER_PORT=36627",
+            "SLURM_JOB_GID=639800512",
+            "CPATH=/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/include:/opt/software/slurm/default/include:/opt/software/slurm/default/include",
+            "LC_NUMERIC=en_GB.UTF-8",
+            "OLDPWD=/nobackup/projects/bdhbs05/robertwelch/runs",
+            "SLURM_JOB_NODELIST=gh003",
+            "BASH_FUNC_which%%=() {  ( alias;",
+            " eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@",
+            "}",
+            "BASH_FUNC_module%%=() {  eval `/opt/software/builder/infrastructure/modules/default/default/default/Modules/default/bin/modulecmd bash $*`",
+            "}"
+        ]
+    },
+    "version": "0.2",
+    "gpulog": null,
+    "cpulog": {
+        "0": [
+            "88.0",
+            "95.8"
+        ],
+        "1": [
+            "0.0",
+            "9.0",
+            "0.0",
+            "77.5"
+        ],
+        "11": [
+            "0.0",
+            "10.0",
+            "77.6"
+        ],
+        "2": [
+            "9.0",
+            "0.0",
+            "74.0"
+        ],
+        "3": [
+            "10.0",
+            "78.8"
+        ],
+        "4": [
+            "10.0",
+            "79.1"
+        ],
+        "5": [
+            "10.0",
+            "79.3"
+        ],
+        "6": [
+            "10.0",
+            "80.5"
+        ],
+        "7": [
+            "10.0",
+            "79.0"
+        ],
+        "8": [
+            "10.0",
+            "79.5"
+        ],
+        "9": [
+            "10.0",
+            "76.5"
+        ],
+        "10": [
+            "10.0",
+            "74.8"
+        ],
+        "12": [
+            "10.0",
+            "74.6"
+        ],
+        "13": [
+            "9.0",
+            "78.5"
+        ],
+        "14": [
+            "10.0",
+            "79.6"
+        ],
+        "15": [
+            "10.0",
+            "79.5"
+        ],
+        "16": [
+            "10.0",
+            "80.0"
+        ],
+        "17": [
+            "10.0",
+            "79.5"
+        ],
+        "18": [
+            "10.0",
+            "79.6"
+        ],
+        "19": [
+            "10.0",
+            "80.6"
+        ],
+        "20": [
+            "10.0",
+            "81.8"
+        ],
+        "21": [
+            "10.0",
+            "80.6"
+        ],
+        "22": [
+            "10.0",
+            "81.3"
+        ],
+        "23": [
+            "10.0",
+            "80.3"
+        ],
+        "24": [
+            "10.0",
+            "81.3"
+        ],
+        "25": [
+            "10.0",
+            "81.1"
+        ],
+        "26": [
+            "10.0",
+            "80.6"
+        ],
+        "27": [
+            "10.0",
+            "81.3"
+        ],
+        "28": [
+            "10.0",
+            "80.6"
+        ],
+        "29": [
+            "10.0",
+            "82.1"
+        ],
+        "30": [
+            "10.0",
+            "81.1"
+        ],
+        "31": [
+            "10.0",
+            "81.1"
+        ],
+        "32": [
+            "10.0",
+            "81.3"
+        ],
+        "33": [
+            "10.0",
+            "81.8"
+        ],
+        "34": [
+            "10.0",
+            "81.8"
+        ],
+        "35": [
+            "10.0",
+            "80.8"
+        ],
+        "36": [
+            "10.0",
+            "81.0"
+        ],
+        "37": [
+            "10.0",
+            "81.3"
+        ],
+        "38": [
+            "10.0",
+            "81.8"
+        ],
+        "39": [
+            "10.0",
+            "81.5"
+        ],
+        "40": [
+            "10.0",
+            "81.3"
+        ],
+        "41": [
+            "10.0",
+            "80.8"
+        ],
+        "42": [
+            "10.0",
+            "81.6"
+        ],
+        "43": [
+            "10.0",
+            "81.3"
+        ],
+        "44": [
+            "10.0",
+            "81.3"
+        ],
+        "45": [
+            "10.0",
+            "82.0"
+        ],
+        "46": [
+            "10.0",
+            "81.3"
+        ],
+        "47": [
+            "10.0",
+            "81.6"
+        ],
+        "48": [
+            "10.0",
+            "81.8"
+        ],
+        "49": [
+            "10.0",
+            "80.6"
+        ],
+        "50": [
+            "10.0",
+            "81.0"
+        ],
+        "51": [
+            "10.0",
+            "81.3"
+        ],
+        "52": [
+            "10.0",
+            "80.5"
+        ],
+        "53": [
+            "10.0",
+            "80.5"
+        ],
+        "54": [
+            "10.0",
+            "81.3"
+        ],
+        "55": [
+            "10.0",
+            "81.3"
+        ],
+        "56": [
+            "10.0",
+            "81.3"
+        ],
+        "57": [
+            "10.0",
+            "81.5"
+        ],
+        "58": [
+            "10.0",
+            "80.8"
+        ],
+        "59": [
+            "10.0",
+            "81.8"
+        ],
+        "60": [
+            "10.0",
+            "81.6"
+        ],
+        "61": [
+            "10.0",
+            "81.8"
+        ],
+        "62": [
+            "10.0",
+            "81.6"
+        ],
+        "63": [
+            "10.0",
+            "81.0"
+        ],
+        "64": [
+            "10.0",
+            "81.6"
+        ],
+        "65": [
+            "10.0",
+            "81.5"
+        ],
+        "66": [
+            "10.0",
+            "81.6"
+        ],
+        "67": [
+            "10.0",
+            "82.0"
+        ],
+        "68": [
+            "10.0",
+            "82.0"
+        ],
+        "69": [
+            "10.0",
+            "82.1"
+        ],
+        "70": [
+            "10.0",
+            "82.0"
+        ],
+        "71": [
+            "10.0",
+            "81.3"
+        ]
+    },
+    "power": {
+        "totalpower": [
+            251.386,
+            461.25199999999995,
+            461.47799999999995,
+            502.856,
+            502.856,
+            418.90999999999997,
+            377.08,
+            460.34999999999997,
+            461.101
+        ],
+        "gracepower": [
+            87.73599999999999,
+            132.981,
+            174.993,
+            175.474,
+            133.57,
+            90.982,
+            174.791,
+            132.743,
+            174.876
+        ],
+        "cpupower": [
+            83.809,
+            125.77499999999999,
+            167.783,
+            167.618,
+            125.714,
+            83.782,
+            167.59099999999998,
+            125.55,
+            167.673
+        ],
+        "iopower": [
+            1.309,
+            3.275,
+            3.2769999999999997,
+            3.928,
+            3.928,
+            3.2729999999999997,
+            3.2729999999999997,
+            3.27,
+            3.274
+        ],
+        "Totals": {
+            "Total Energy (J)": 3897.269,
+            "Total Grace Energy (J)": 1278.1459999999997,
+            "Total CPU Energy (J)": 1215.2949999999998,
+            "Total IO Energy (J)": 28.807
+        }
+    },
+    "run": {
+        "Gromacs info": {
+            "GROMACSversion": "2024",
+            "Precision": "mixed",
+            "Memorymodel": "64bit",
+            "MPIlibrary": "thread_mpi",
+            "OpenMPsupport": "enabled(GMX_OPENMP_MAX_THREADS=128)",
+            "GPUsupport": "CUDA",
+            "NBNxMGPUsetup": "super-cluster2x2x2/cluster8",
+            "SIMDinstructions": "ARM_SVE",
+            "CPUFFTlibrary": "fftw-3.3.8",
+            "GPUFFTlibrary": "cuFFT",
+            "Multi-GPUFFT": "none",
+            "TNGsupport": "enabled",
+            "Hwlocsupport": "disabled",
+            "Tracingsupport": "disabled",
+            "Ccompiler": "/opt/software/builder/developers/compilers/gcc/12.2/1/default/bin/gccGNU12.2.0",
+            "Ccompilerflags": "-fexcess-precision=fast-funroll-all-loops-march=armv8.2-a+sve-msve-vector-bits=128-Wno-missing-field-initializers-O3-DNDEBUG",
+            "C++compiler": "/opt/software/builder/developers/compilers/gcc/12.2/1/default/bin/g++GNU12.2.0",
+            "C++compilerflags": "-fexcess-precision=fast-funroll-all-loops-march=armv8.2-a+sve-msve-vector-bits=128-Wno-missing-field-initializers-Wno-cast-function-type-strict-fopenmp-O3-DNDEBUG",
+            "BLASlibrary": "Internal",
+            "LAPACKlibrary": "Internal",
+            "CUDAcompiler": "/opt/software/builder/developers/compilers/cuda/12.3.2/1/default/bin/nvccnvcc",
+            "CUDAcompilerflags": "-std=c++17;--generate-code=arch=compute_50,code=sm_50;--generate-code=arch=compute_52,code=sm_52;--generate-code=arch=compute_60,code=sm_60;--generate-code=arch=compute_61,code=sm_61;--generate-code=arch=compute_70,code=sm_70;--generate-code=arch=compute_75,code=sm_75;--generate-code=arch=compute_80,code=sm_80;--generate-code=arch=compute_86,code=sm_86;--generate-code=arch=compute_89,code=sm_89;--generate-code=arch=compute_90,code=sm_90;-Wno-deprecated-gpu-targets;--generate-code=arch=compute_53,code=sm_53;--generate-code=arch=compute_80,code=sm_80;-use_fast_math;-Xptxas;-warn-double-usage;-Xptxas;-Werror;-D_FORCE_INLINES;-Xcompiler;-fopenmp;-fexcess-precision=fast-funroll-all-loops-march=armv8.2-a+sve-msve-vector-bits=128-Wno-missing-field-initializers-Wno-cast-function-type-strict-fopenmp-O3-DNDEBUG",
+            "CUDAdriver": "12.40",
+            "CUDAruntime": "12.30"
+        },
+        "Megaflops": {
+            "Pair Search distance check": {
+                "M-Number": "605.563536",
+                "M-Flops": "5450.072",
+                "% Flops": "0.0"
+            },
+            "NxN Ewald Elec. + LJ [F]": {
+                "M-Number": "2599408.367424",
+                "M-Flops": "202753852.659",
+                "% Flops": "98.3"
+            },
+            "NxN Ewald Elec. + LJ [V&F]": {
+                "M-Number": "26311.046976",
+                "M-Flops": "3394125.060",
+                "% Flops": "1.6"
+            },
+            "1,4 nonbonded interactions": {
+                "M-Number": "85.651713",
+                "M-Flops": "7708.654",
+                "% Flops": "0.0"
+            },
+            "Shift-X": {
+                "M-Number": "3.274035",
+                "M-Flops": "19.644",
+                "% Flops": "0.0"
+            },
+            "Bonds": {
+                "M-Number": "16.850337",
+                "M-Flops": "994.170",
+                "% Flops": "0.0"
+            },
+            "Propers": {
+                "M-Number": "74.351487",
+                "M-Flops": "17026.491",
+                "% Flops": "0.0"
+            },
+            "Impropers": {
+                "M-Number": "5.100102",
+                "M-Flops": "1060.821",
+                "% Flops": "0.0"
+            },
+            "Virial": {
+                "M-Number": "98.269650",
+                "M-Flops": "1768.854",
+                "% Flops": "0.0"
+            },
+            "Stop-CM": {
+                "M-Number": "0.411705",
+                "M-Flops": "4.117",
+                "% Flops": "0.0"
+            },
+            "P-Coupling": {
+                "M-Number": "98.044605",
+                "M-Flops": "588.268",
+                "% Flops": "0.0"
+            },
+            "Calc-Ekin": {
+                "M-Number": "196.089210",
+                "M-Flops": "5294.409",
+                "% Flops": "0.0"
+            },
+            "CMAP": {
+                "M-Number": "2.200044",
+                "M-Flops": "3740.075",
+                "% Flops": "0.0"
+            },
+            "Urey-Bradley": {
+                "M-Number": "59.151183",
+                "M-Flops": "10824.666",
+                "% Flops": "0.0"
+            }
+        },
+        "Cycles": {
+            "Neighbor search": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "167",
+                "Wall time (s)": "0.094",
+                "Giga-cycles (total)": "6.772",
+                "% Runtime": "1.1"
+            },
+            "Launch PP GPU ops.": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "99835",
+                "Wall time (s)": "1.274",
+                "Giga-cycles (total)": "91.696",
+                "% Runtime": "14.7"
+            },
+            "Force": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "50001",
+                "Wall time (s)": "2.378",
+                "Giga-cycles (total)": "171.190",
+                "% Runtime": "27.5"
+            },
+            "PME GPU mesh": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "50001",
+                "Wall time (s)": "1.234",
+                "Giga-cycles (total)": "88.836",
+                "% Runtime": "14.2"
+            },
+            "Wait Bonded GPU": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "501",
+                "Wall time (s)": "0.006",
+                "Giga-cycles (total)": "0.408",
+                "% Runtime": "0.1"
+            },
+            "Wait GPU NB local": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "50001",
+                "Wall time (s)": "0.347",
+                "Giga-cycles (total)": "24.970",
+                "% Runtime": "4.0"
+            },
+            "Wait GPU state copy": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "60376",
+                "Wall time (s)": "2.522",
+                "Giga-cycles (total)": "181.550",
+                "% Runtime": "29.1"
+            },
+            "NB X/F buffer ops.": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "5001",
+                "Wall time (s)": "0.111",
+                "Giga-cycles (total)": "7.999",
+                "% Runtime": "1.3"
+            },
+            "Write traj.": {
+                "Ranks": "1",
+                "Threads": "72",
+                "Calls": "3",
+                "Wall time (s)": "0.042",
+                "Giga-cycles (total)": "3.041",
+                "% Runtime": "0.5"
+            },
+            "Rest": {
+                "Ranks": "0.654",
+                "Threads": "47.084",
+                "Calls": "7.6"
+            }
+        },
+        "Infile": {
+            "integrator": "md",
+            "tinit": "0",
+            "dt": "0.002",
+            "nsteps": "50000",
+            "init-step": "0",
+            "simulation-part": "1",
+            "mts": "false",
+            "mass-repartition-factor": "1",
+            "comm-mode": "Linear",
+            "nstcomm": "2500",
+            "bd-fric": "0",
+            "ld-seed": "2812901079",
+            "emtol": "10",
+            "emstep": "0.01",
+            "niter": "20",
+            "fcstep": "0",
+            "nstcgsteep": "1000",
+            "nbfgscorr": "10",
+            "rtpi": "0.05",
+            "nstxout": "25000",
+            "nstvout": "0",
+            "nstfout": "0",
+            "nstlog": "10000",
+            "nstcalcenergy": "100",
+            "nstenergy": "10000",
+            "nstxout-compressed": "0",
+            "compressed-x-precision": "1000",
+            "cutoff-scheme": "Verlet",
+            "nstlist": "10",
+            "pbc": "xyz",
+            "periodic-molecules": "false",
+            "verlet-buffer-tolerance": "0.005",
+            "verlet-buffer-pressure-tolerance": "-1",
+            "rlist": "1.2",
+            "coulombtype": "PME",
+            "coulomb-modifier": "None",
+            "rcoulomb-switch": "0",
+            "rcoulomb": "1.2",
+            "epsilon-r": "1",
+            "epsilon-rf": "inf",
+            "vdw-type": "Cut-off",
+            "vdw-modifier": "Force-switch",
+            "rvdw-switch": "1",
+            "rvdw": "1.2",
+            "DispCorr": "No",
+            "table-extension": "1",
+            "fourierspacing": "0.12",
+            "fourier-nx": "52",
+            "fourier-ny": "48",
+            "fourier-nz": "52",
+            "pme-order": "4",
+            "ewald-rtol": "1e-05",
+            "ewald-rtol-lj": "0.001",
+            "lj-pme-comb-rule": "Geometric",
+            "ewald-geometry": "3d",
+            "epsilon-surface": "0",
+            "ensemble-temperature-setting": "constant",
+            "ensemble-temperature": "300",
+            "tcoupl": "Berendsen",
+            "nsttcouple": "10",
+            "nh-chain-length": "0",
+            "print-nose-hoover-chain-variables": "false",
+            "pcoupl": "Berendsen",
+            "pcoupltype": "Isotropic",
+            "nstpcouple": "10",
+            "tau-p": "5"
+        },
+        "Totals": {
+            "Wall Clock Time (s)": 8.66,
+            "Number of atoms": 19605.0,
+            "Number of steps": 50000.0,
+            "Timestep (ns)": 2e-06,
+            "Simulation time (ns)": 0.09999999999999999,
+            "step/s": 5773.6720554272515,
+            "ns/s": 0.01154704861111111,
+            "ns/day": 997.665,
+            "s/step": 0.0001732,
+            "s/ns": 86.60221617476809,
+            "day/ns": 0.001002340464985742,
+            "Consumed Energy (J)": 3897.269,
+            "J/ns": 38972.69,
+            "J/step": 0.07794538
+        }
+    },
+    "slurm": {
+        "slurm": {
+            "account": "bdhbs05",
+            "time": "1:0:0",
+            "partition": "gh",
+            "gres": "gpu:1",
+            "job-name": "gbenchmark"
+        },
+        "modules": [
+            "cuda/12.3.2"
+        ],
+        "program": "GROMACS",
+        "arguments": "hpcbench gmxlog -a power.json md.log run.json",
+        "date": 1710335746.670939
+    },
+    "meta": {
+        "MD": "GROMACS2024",
+        "Machine": "Grace Hopper Testbed",
+        "comment": "help"
+    }
+}
