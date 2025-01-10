@@ -748,6 +748,7 @@
         "NodeList": "nid006106",
         "ElapsedRaw": "321",
         "JobID": "5804735",
+        "MaxRss": "138456K",
         "ConsumedEnergyRaw": "0"
     },
     "slurm": {
@@ -772,6 +773,8 @@
     "meta": {
         "Comment": "help",
         "Machine": "ARCHER2",
+        "Atoms": "1400k",
+        "Memorycomparison": "yes",
         "Best": "yes"
     }
 }

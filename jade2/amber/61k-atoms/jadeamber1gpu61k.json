@@ -656,6 +656,9 @@
     },
     "meta": {
         "Comment": "help",
-        "Machine": "JADE2"
+        "Machine": "JADE2",
+        "Atoms": "61k",
+        "GPUMemComparison": "yes",
+        "GPUMem": "560000K"
     }
 }

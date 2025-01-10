@@ -294,7 +294,7 @@
             "Simulation time (ns)": 0.02,
             "step/s": 882.5544809528328,
             "ns/s": 2.042950187390817e-08,
-            "ns/day": 0.0017651089619056658,
+            "ns/day": 152.5054,
             "s/step": 0.0011330745258019304,
             "s/ns": 48948819.51464339,
             "day/ns": 566.5372629009652,
@@ -326,6 +326,9 @@
     },
     "meta": {
         "Comment": "help",
-        "Machine": "JADE2"
+        "Atoms": "61k",
+        "Machine": "JADE2",
+        "GPUMemComparison": "yes",
+        "GPUMem": "370000K"
     }
 }

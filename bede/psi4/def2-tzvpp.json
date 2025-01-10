@@ -274,7 +274,9 @@
         "QM": "Psi4",
         "Machine": "BEDE-GH",
         "comment": "none",
-        "basis": "def2-tzvpp"
+        "basis": "def2-tzvpp",
+        "set": "def2-tzvpp",
+        "method": "ccsd"
     },
     "Accounting": {
         "ConsumedEnergyRaw": "0",

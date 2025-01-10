@@ -1,0 +1,6 @@
+Microscope = Jeol Cryo-ARM (200kV) 
+Pixel size = 0.885 Ang/pixel
+Voltage = 200 kV
+Spherical aberration = 1.4
+Dose rate = 1.277 e / A**2 / frame
+Data courtesy of Takayuki Kato in the Namba group (Osaka university, Japan)

@@ -92181,6 +92181,7 @@
         "NodeList": "nid006656",
         "ElapsedRaw": "3653",
         "JobID": "6011343",
+        "MaxRss": "227028K",
         "ConsumedEnergyRaw": "0"
     },
     "run": {
@@ -92281,6 +92282,8 @@
     "meta": {
         "Comment": "1",
         "Machine": "ARCHER2",
+        "Atoms": "3000k",
+        "Memorycomparison": "yes",
         "Best": "yes"
     }
 }

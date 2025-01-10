@@ -274,7 +274,9 @@
         "QM": "Psi4",
         "Machine": "BEDE-GH",
         "comment": "none",
-        "basis": "6-31g*"
+        "basis": "6-31g*",
+        "set": "6-31g*",
+        "method": "ccsd"
     },
     "Accounting": {
         "ConsumedEnergyRaw": "0",

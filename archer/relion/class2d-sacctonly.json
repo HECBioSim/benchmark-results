@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "EM": "Relion 5",
+        "Machine": "ARCHER2",
+        "Dataset": "relion3tutorial",
+        "JobID": "8289624",
+        "JobType": "Class2D"
+    },
+    "accounting": {
+        "ConsumedEnergyRaw": "1791491",
+        "CPUTimeRAW": "1590272",
+        "NodeList": "nid001488",
+        "ElapsedRaw": "6212",
+        "JobID": "8289624"
+    }
+}
