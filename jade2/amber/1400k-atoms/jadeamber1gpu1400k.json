@@ -1402,6 +1402,8 @@
         "Machine": "JADE2",
         "Atoms": "1400k",
         "GPUMemComparison": "yes",
-        "GPUMem": "4278000K"
+        "GPUMem": "4278000K",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "AMBER2020 on JADE2"
     }
 }

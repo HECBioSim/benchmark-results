@@ -4094,6 +4094,8 @@
         "Machine": "JADE2",
         "Atoms": "3000k",
         "GPUMemComparison": "yes",
-        "GPUMem": "2048000K"
+        "GPUMem": "2048000K",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "GROMACS2022.2 on JADE2"
     }
 }

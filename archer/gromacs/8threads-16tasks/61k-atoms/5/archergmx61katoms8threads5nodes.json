@@ -763,7 +763,8 @@
     },
     "meta": {
         "Comment": "help",
-        "Machine": "ARCHER2"
+        "Machine": "ARCHER2",
+        "Atoms": "61k"
     },
     "cpulog": {
         "45": [

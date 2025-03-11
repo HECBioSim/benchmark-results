@@ -508,6 +508,8 @@
     "meta": {
         "MD": "AMBER22",
         "Machine": "Grace Hopper Testbed",
-        "comment": "20k"
+        "comment": "20k",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "AMBER22 on GH200"
     }
 }

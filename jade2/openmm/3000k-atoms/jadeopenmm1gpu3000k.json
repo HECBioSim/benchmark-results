@@ -2933,6 +2933,8 @@
         "Machine": "JADE2",
         "Atoms": "3000k",
         "GPUMemComparison": "yes",
-        "GPUMem": "2616000K"
+        "GPUMem": "2616000K",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "OpenMM 8.1.1 on JADE2"
     }
 }

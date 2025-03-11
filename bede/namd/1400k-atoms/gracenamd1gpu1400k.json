@@ -3982,6 +3982,8 @@
     "meta": {
         "MD": "GROMACS2024",
         "Machine": "Grace Hopper Testbed",
-        "comment": "help"
+        "comment": "help",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "NAMD3.0b6 on GH200"
     }
 }

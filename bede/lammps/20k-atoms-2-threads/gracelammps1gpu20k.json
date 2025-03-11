@@ -1377,6 +1377,8 @@
         "MD": "LAMMPS2023",
         "Machine": "Grace Hopper Testbed",
         "comment": "lammpsthreadstest",
-        "tasks": "2"
+        "tasks": "2",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "LAMMPSAug2023 on GH200"
     }
 }

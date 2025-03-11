@@ -657,6 +657,8 @@
         "Machine": "JADE2",
         "Atoms": "20k",
         "GPUMemComparison": "yes",
-        "GPUMem": "480000K"
+        "GPUMem": "480000K",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "NAMD3.0-alpha7 on JADE2"
     }
 }

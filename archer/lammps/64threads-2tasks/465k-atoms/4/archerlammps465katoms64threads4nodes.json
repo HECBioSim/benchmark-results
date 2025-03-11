@@ -18660,6 +18660,7 @@
     },
     "meta": {
         "Comment": "64",
-        "Machine": "ARCHER2"
+        "Machine": "ARCHER2",
+        "Atoms": "465k"
     }
 }

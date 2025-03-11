@@ -13024,6 +13024,7 @@
     "meta": {
         "Comment": "1",
         "Machine": "ARCHER2",
-        "Best": "yes"
+        "Best": "yes",
+        "Atoms": "1400k"
     }
 }

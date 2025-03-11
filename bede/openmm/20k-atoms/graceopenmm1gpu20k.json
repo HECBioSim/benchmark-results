@@ -322,6 +322,8 @@
     "meta": {
         "MD": "OpenMM",
         "Machine": "Grace Hopper Testbed",
-        "comment": "help"
+        "comment": "help",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "OpenMM 8.1.1 on GH200"
     }
 }

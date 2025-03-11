@@ -40057,6 +40057,8 @@
         "Machine": "JADE2",
         "Atoms": "1400k",
         "GPUMemComparison": "yes",
-        "GPUMem": "15697000"
+        "GPUMem": "15697000",
+        "PlotJadeGrace": "yes",
+        "JadeGraceComparison": "LAMMPS Aug2023 on JADE2"
     }
 }

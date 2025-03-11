@@ -21756,6 +21756,7 @@
     },
     "meta": {
         "Comment": "4",
-        "Machine": "ARCHER2"
+        "Machine": "ARCHER2",
+        "Atoms": "1400k"
     }
 }

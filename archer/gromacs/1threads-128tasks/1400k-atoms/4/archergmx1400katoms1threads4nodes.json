@@ -772,7 +772,8 @@
     "meta": {
         "Comment": "help",
         "Machine": "ARCHER2",
-        "Best": "yes"
+        "Best": "yes",
+        "Atoms": "1400k"
     },
     "cpulog": {
         "47": [
