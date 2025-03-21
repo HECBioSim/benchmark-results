@@ -16285,11 +16285,11 @@
         ]
     },
     "accounting": {
-        "CPUTimeRAW": "1620480",
+        "ConsumedEnergyRaw": "3168694",
+        "CPUTimeRAW": "1633280",
         "NodeList": "nid[001428-001430,001492,003152,003418,003427,003431,003588-003589]",
-        "ElapsedRaw": "633",
-        "JobID": "6051365",
-        "ConsumedEnergyRaw": "0"
+        "ElapsedRaw": "638",
+        "JobID": "6051365"
     },
     "run": {
         "Totals": {
@@ -16305,7 +16305,7 @@
             "s/ns": "22659.323367427227",
             "day/ns": "0.26226068712300027",
             "Consumed Energy (J)": "0.0",
-            "J/ns": "0.0",
+            "J/ns": "158434700",
             "J/step": "0.0"
         },
         "Breakdowns": [

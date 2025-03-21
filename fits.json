@@ -156,7 +156,7 @@
             "atomwarning": "WARNING: your system contains $equality atoms than our $size test system. These results from this tool are probably wrong!",
             "texticons": {
                 "node-hours": "fa-clock-o",
-                "ns-day": "fa-tachometer",
+                "ns-day": "fa-solid fa-gauge",
                 "storage-gb": " fa-hdd-o",
                 "power-kwh": "fa-bolt",
                 "house-days": "fa-home",

@@ -257,7 +257,7 @@ hpcbench scaling \
 --outside \
 --noysci \
 --noxsci \
---yaxislabel "'Energy efficiency in kWh/ns (lower is better)'" \
+--yaxislabel "'Simulation power usage in kWh/ns (lower is better)'" \
 --xaxislabel "'Number of HPC nodes used'" \
 --yscalefactor 0.00000027778 \
 --outfile archer_20k_power.pdf \
@@ -273,7 +273,7 @@ hpcbench scaling \
 --outside \
 --noysci \
 --noxsci \
---yaxislabel "'Energy efficiency in kWh/ns (lower is better)'" \
+--yaxislabel "'Simulation power usage in kWh/ns (lower is better)'" \
 --xaxislabel "'Number of HPC nodes used'" \
 --yscalefactor 0.00000027778 \
 --outfile archer_61k_power.pdf \
@@ -289,7 +289,7 @@ hpcbench scaling \
 --outside \
 --noysci \
 --noxsci \
---yaxislabel "'Energy efficiency in kWh/ns (lower is better)'" \
+--yaxislabel "'Simulation power usage in kWh/ns (lower is better)'" \
 --xaxislabel "'Number of HPC nodes used'" \
 --yscalefactor 0.00000027778 \
 --outfile archer_465k_power.pdf \
@@ -305,7 +305,7 @@ hpcbench scaling \
 --outside \
 --noysci \
 --noxsci \
---yaxislabel "'Simulation efficiency in kWh/ns (lower is better)'" \
+--yaxislabel "'Simulation power usage in kWh/ns (lower is better)'" \
 --xaxislabel "'Number of HPC nodes used'" \
 --yscalefactor 0.00000027778 \
 --outfile archer_1400k_power.pdf \
@@ -321,7 +321,7 @@ hpcbench scaling \
 --outside \
 --noysci \
 --noxsci \
---yaxislabel "'Simulation efficiency in kWh/ns (lower is better)'" \
+--yaxislabel "'Simulation power usage in kWh/ns (lower is better)'" \
 --xaxislabel "'Number of HPC nodes used'" \
 --yscalefactor 0.00000027778 \
 --outfile archer_3000k_power.pdf \
@@ -521,6 +521,7 @@ hpcbench bars \
 --xaxislabel "'Number of atoms'" \
 --yaxislabel "'Memory usage (GB)'" \
 --yscalefactor 0.000001 \
+--sort \
 -o md_archer_memory.pdf
 
 hpcbench bars \
@@ -532,6 +533,7 @@ hpcbench bars \
 --xaxislabel "'Number of atoms'" \
 --yaxislabel "'GPU memory usage (GB)'" \
 --yscalefactor 0.000001 \
+--sort \
 -o md_jade2_gpu_memory.pdf
 
 # conservation of energy
@@ -555,7 +557,6 @@ hpcbench fits \
 -x "'run:Totals:Number of atoms'" \
 -y "'run:Totals:ns/day'" \
 -y "'run:Totals:J/ns'" \
---hardcode \
 --debug \
 -o fits.json
 
@@ -566,7 +567,6 @@ hpcbench fits \
 -x "'run:Totals:Number of atoms'" \
 -y "'run:Totals:ns/day'" \
 -y "'run:Totals:J/ns'" \
---hardcode \
 --debug \
 -o fits.json
 
@@ -577,7 +577,6 @@ hpcbench fits \
 -x "'run:Totals:Number of atoms'" \
 -y "'run:Totals:ns/day'" \
 -y "'run:Totals:J/ns'" \
---hardcode \
 --debug \
 -o fits.json
 
